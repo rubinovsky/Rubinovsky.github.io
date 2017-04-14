@@ -1,0 +1,60 @@
+////////////////
+/////SELECT/////
+////////////////
+.slct{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	z-index: 1;
+	border: 2px solid #DFE3E6; 
+	transition: border 0.5s;
+	label{
+		width: 255px;
+		padding: 11px 30px 9px 16px;
+		font-size: 14px;
+		line-height: 18px;
+		text-decoration: none;
+		color: #000;
+		cursor: pointer;
+		position: relative;
+		z-index: 3;
+	}
+	label:focus{
+		outline: none;
+	}
+	.option:hover{
+		color: #fff;
+		background-color: #30AE63;
+	}
+	input[type='radio']{
+		visibility: hidden;
+		position: absolute;
+		z-index: -1;
+	}
+	.option{
+		display: none;
+	}
+}
+.slct:before{
+	content: '';
+    display: block;
+    position: absolute;
+    z-index: 2;
+    right: 15px;
+    top: 17px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #30AE63;
+    transition: border 0.2s;
+}
+.open_slct:before{
+	border-top: 0px;
+	border-bottom: 5px solid #30AE63;
+}
+.open_slct:focus{
+	border: 2px solid #30AE63;
+}
