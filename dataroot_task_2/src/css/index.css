@@ -1,7 +1,7 @@
 body {
   font-size: 14px;
   line-height: 17px;
-  font-family: 'Roboto';
+  font-family: 'Open Sans';
   background-color: rgba(90, 104, 114, 0.08);
   font-weight: 500; }
 
@@ -225,7 +225,7 @@ body {
       margin: -2px 16px 0 0; }
     .header__interaction .interaction__advert:before {
       position: absolute;
-      left: 15px;
+      left: 17px;
       top: 12px;
       content: '';
       display: block;

@@ -144,7 +144,7 @@ body {
       margin: -2px 16px 0 0; }
     .header__interaction .interaction__advert:before {
       position: absolute;
-      left: 15px;
+      left: 17px;
       top: 12px;
       content: '';
       display: block;
@@ -505,6 +505,8 @@ body {
         position: relative;
         display: inline-block;
         line-height: 17px; }
+      .rent__header .rent__sort_box a:hover {
+        opacity: 0.7; }
       .rent__header .rent__sort_box a:after {
         content: '';
         position: absolute;
