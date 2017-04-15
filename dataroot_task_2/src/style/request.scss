@@ -1,0 +1,139 @@
+@import 'select';
+@import 'buttons';
+body{
+	background-color: rgba(0,0,0, 0.7);
+	font-size: 14px;
+	line-height: 17px;
+	font-family: 'Open Sans';
+	font-weight: 500;
+}
+.request{
+	margin: auto;
+	position: relative;
+	border-top: 4px solid #30AE63;
+	display: flex;	
+	width: 800px;
+	box-sizing: border-box;
+	&__info{
+		padding: 43px 33px 0 47px;
+		padding-right: 33px;	
+		width: 50%;
+		color: #152935;
+		background-color: #F5F7FA;
+		h3{
+			margin: 0;	
+			font-weight: 500;
+			font-size: 24px;
+		}
+		p{
+			line-height: 20px;	
+			margin: 20px 0 0 0 ;
+		}
+
+	}
+	&__config{
+		background-color: #fff;
+		box-sizing: border-box;
+		padding: 37px 33px 56px 47px;
+		width: 50%;	
+		.request__select{
+		    width: 305px;
+		    height: 41px;
+		    label{
+		    	width: 320px;
+		    	box-sizing: border-box;	
+		    }
+		}
+		.request__locality{
+			margin-bottom: 22px;	
+			label{
+					cursor: pointer;
+					color: #000;
+					margin-right: 32px;
+			    	padding: 0 10px 8px 13px;
+			}
+			label:hover{
+					opacity: 0.7;
+			}
+			label:last-child{
+					margin-right: 0;       
+			}
+			input[type='radio']{
+					visibility: hidden;
+					position: absolute;
+					z-index: -3;
+			}
+			input[type='radio']:checked + label{
+					border-bottom: 2px solid #30AE63;
+			}
+		}
+		.rooms{	
+			margin-top: 20px;	
+			margin-bottom: 39px;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			span{
+				width: 100%;
+				color: #000;
+				display: block;
+			}
+			label{
+				box-sizing: border-box;
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				background-color: #fff;
+				color: #000;
+				line-height: 36px;
+				text-align: center;
+				border-radius: 50%; 
+				border: 2px solid #DFE3E6;
+				cursor: pointer;
+				margin:  9px 12px 1px 0;
+			}
+			label:last-child{
+				margin-right: 0;
+			}
+			label:hover{
+				opacity: 0.85;
+			}
+			input[type="checkbox"]:checked + label{
+				background-color: #30AE63;
+				border: 2px solid #30AE63;
+				color: #fff;
+			}
+			input[type="checkbox"]{
+				visibility: hidden;
+				position: absolute;
+				z-index: -2;
+			}
+		}
+		input[type='text']{
+			box-sizing: border-box;
+			font-size: 12px;
+			color: #5A6872;
+			padding: 13px 16px 11px 16px;
+			width: 100%;	
+			border-radius: 	2px;
+			border: 2px solid #DFE3E6;
+			margin-bottom: 20px;	
+		}
+		input[type='text']:focus{
+			outline: none;
+			border-color: #30AE63;
+		}
+		input[type='submit']{
+			margin-top: 17px;
+		}
+	}
+	&__close{
+		position: absolute;
+	    top: 5px;
+	    right: 15px;
+	    font-size: 20px;
+	    &:focus{
+	    	outline: none;
+	    }
+	}
+}

@@ -1,0 +1,47 @@
+doctype html
+html 
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title DataRoot Task 2
+    link(rel='stylesheet', href='css/normalize.css')
+    link(rel='stylesheet', href='css/request.css')
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet")
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+    script(src='js/select.js')
+  body
+    .request
+      .request__info
+        h3 Оставить заявку
+        p Нет времени искать по сайту? Заполняй критерии поиска и получай акутальные объявления как только они появляются на Metrovka.
+      .request__config
+        form(action="#")
+          .request__locality
+            input(id='request_district' type="radio" name='request_locality' value='district' checked)
+            label(for="request_district") Район
+            input(id='request_metro' type="radio" name='request_locality' value='metro')
+            label(for="request_metro") Метро
+          .request__select
+            div(class="slct wrap_select")
+              input(id='radio_request' type="radio" name='request_district' )
+              label(for="radio_request") Голосеевский
+              input(class='radio' id='request_golos' type="radio" name='request_district' checked)
+              label(class='option' for="request_golos") Голосеевский
+              input(class='radio' id='request_soloma' type="radio" name='request_district' checked)
+              label(class='option' for="request_soloma") Соломенский
+          .rooms
+            span Кол-во комнат
+            input(type="checkbox" id="room_1" value="1")
+            label(for="room_1") 1
+            input(type="checkbox" id="room_2" value="2")
+            label(for="room_2") 2
+            input(type="checkbox" id="room_3" value="3")
+            label(for="room_3") 3
+            input(type="checkbox" id="room_4" value="4")
+            label(for="room_4") 4
+            input(type="checkbox" id="room_5+" value="5+")
+            label(for="room_5+") 5+
+          input(class='form_name' type="text" name='name' placeholder='Как вас зовут?')
+          input(class='form_email' type="text" name='email' placeholder='Email')
+          input(class='primary_button' type="submit" value='Оставить заявку')
+      a(class='request__close' href="#") x
