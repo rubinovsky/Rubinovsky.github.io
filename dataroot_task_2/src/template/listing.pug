@@ -1,0 +1,140 @@
+doctype html
+html 
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title DataRoot Task 2
+    link(rel='stylesheet', href='css/normalize.css')
+    link(rel='stylesheet', href='css/listing.css')
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet")
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+  body
+    .header
+      .header__container
+        - var currentUrl = 'rent'//Для active
+        include _header
+    section(class='rent')
+      .rent__header
+        .breadcrumb
+          a(href="#") Долгосрочная аренда
+          a(href="#") Квартиры
+          a(href="#") Киев
+        h2 Долгосрочная аренда квартир в Киеве
+        .rent__sort_box
+          span 3 варианта размещения
+          a(class='rent__sort' href="#") Сортировать
+          a(href="#") Валюта
+      .rent__items
+        .rent__item
+          a(class='rent__photo' href="#")
+            img(src="img/listing__item_1.png", alt="Квартира фото")
+          .rent__infobox
+            h3 
+              a(href="#") 2 комн., Дарницкий р-н, Пчелки 2б
+            .rent__metro
+              span 
+                |
+                i(class='metro_point metro_green')
+                |Позняки
+              span 30 мин пешком
+            .rent_features
+              h5 Особенности 
+              .rent__specifications
+                p 120 кв. м.   
+                p этаж 1 из 5
+              p(class='rent__info') Комунальные включены, без старой мебели, новый дом, дизайнерский ремонт, тихий район, удобная транспортная развязка, шикарный вид на Днепр.
+            .rent__slider_nav
+              input(id='rent__slide_item1_1' type="radio" name='rent__slide_item1' checked)
+              label(for="rent__slide_item1_1")
+              input(id='rent__slide_item1_2' type="radio" name='rent__slide_item1')
+              label(for="rent__slide_item1_2")
+          .rent__options
+            span(class='rent__price') 11 600 грн
+            .rent__dolars
+              p 460$
+              p(class='rate') курс
+            span(class='index__price high__price') Высокая цена
+            .contactme
+              a(class='contactme__phone' href="#")
+                i
+              a(class='contactme__massege' href="#")
+                i
+            a(href="#" class='rent__next')
+              p След. раздел
+              p Инфраструктура
+        .rent__item
+          a(class='rent__photo' href="#")
+            img(src="img/listing__item_1.png", alt="Квартира фото")
+          .rent__infobox
+            h3 
+              a(href="#") 2 комн., Дарницкий р-н, Пчелки 2б
+            .rent__metro
+              span 
+                |
+                i(class='metro_point metro_green')
+                |Позняки
+              span 30 мин пешком
+            .rent_features
+              h5 Особенности 
+              .rent__specifications
+                p 120 кв. м.   
+                p этаж 1 из 5
+              p(class='rent__info') Комунальные включены, без старой мебели, новый дом, дизайнерский ремонт, тихий район, удобная транспортная развязка, шикарный вид на Днепр.
+              .rent__slider_nav
+                input(id='rent__slide_item2_1' type="radio" name='rent__slide_item2' checked)
+                label(for="rent__slide_item2_1")
+                input(id='rent__slide_item2_2' type="radio" name='rent__slide_item2')
+                label(for="rent__slide_item2_2")
+          .rent__options
+            span(class='rent__price') 11 600 грн
+            .rent__dolars
+              p 460$
+              p(class='rate') курс
+            span(class='index__price low__price') Высокая цена
+            .contactme
+              a(class='contactme__phone' href="#")
+                i
+              a(class='contactme__massege' href="#")
+                i
+            a(href="#" class='rent__next')
+              p След. раздел
+              p Инфраструктура
+        .rent__item
+          a(class='rent__photo' href="#")
+            img(src="img/listing__item_1.png", alt="Квартира фото")
+          .rent__infobox
+            h3 
+              a(href="#") 2 комн., Дарницкий р-н, Пчелки 2б
+            .rent__metro
+              span 
+                |
+                i(class='metro_point metro_green')
+                |Позняки
+              span 30 мин пешком
+            .rent_features
+              h5 Особенности 
+              .rent__specifications
+                p 120 кв. м.   
+                p этаж 1 из 5
+              p(class='rent__info') Комунальные включены, без старой мебели, новый дом, дизайнерский ремонт, тихий район, удобная транспортная развязка, шикарный вид на Днепр.
+              .rent__slider_nav
+                input(id='rent__slide_item3_1' type="radio" name='rent__slide_item3' checked)
+                label(for="rent__slide_item3_1")
+                input(id='rent__slide_item3_2' type="radio" name='rent__slide_item3')
+                label(for="rent__slide_item3_2")
+          .rent__options
+            span(class='rent__price') 11 600 грн
+            .rent__dolars
+              p 460$
+              p(class='rate') курс
+            span(class='index__price low__price') Высокая цена
+            .contactme
+              a(class='contactme__phone' href="#")
+                i
+              a(class='contactme__massege' href="#")
+                i
+            a(href="#" class='rent__next')
+              p След. раздел
+              p Инфраструктура
+    include _footer
