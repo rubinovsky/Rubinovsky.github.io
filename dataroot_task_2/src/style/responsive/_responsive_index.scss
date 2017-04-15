@@ -33,50 +33,8 @@ $width_4: 483px;
 			}
 		}
 	}
-	.footer{
-		ul{
-			text-align: center;
-			width: 50%;
-			margin: 0;
-			li{
-				width: 100%;
-			}
-		}
-		&__contacts{
-			text-align: center;
-			width: 50%;
-			.footer__social{
-				display: inline-flex;
-				margin: auto;
-			}
-		}
-		&__logo{
-			width: 100%;
-			text-align: center;
-		}
-	}
 }
 @media screen and (max-width: $width_2) {
-	.header{
-		text-align: center;
-		&__interaction{
-			margin: 9px auto 0 auto;
-		}
-		&__title{
-			margin-top: 20px;
-		}
-		&__search{
-			text-align: left;
-			.header__town{
-				.header__select{
-					width: 250px;
-					label{
-						width: 200px;
-					}
-				}
-			}
-		}
-	}
 	.metro{
 		flex-wrap: wrap;
 		&__img{
@@ -123,23 +81,6 @@ $width_4: 483px;
 	}
 }
 @media screen and (max-width: $width_3){
-	.header{
-		&__title{
-			text-align: left;
-		}
-		&__search{
-			margin-top: 32px;
-			.header__town{
-			}
-			.rooms{
-				margin-top: 31px;
-			}
-			.header__submit{
-				margin-top: 30px;
-				padding: 10px 56px 11px 28px;
-			}
-		}
-	}
 	.metrovka{
 		&__items{
 			.metrovka__item{
@@ -149,52 +90,6 @@ $width_4: 483px;
 	}
 }
 @media screen and (max-width: $width_4){
-	.header{
-		&__container{
-			padding: 20px 25px 26px 16px;
-		}
-		&__nav{
-			a{
-				display: none;
-			}
-			.nav__link_active{
-				display: block;
-			}
-			.header__logo{
-				display: block;
-				margin-top: 3px;
-				margin-right: 25px;
-			}
-		}
-		&__interaction{
-			display: none;
-		}
-		&__title{
-			margin-top: 40px;
-    		padding-right: 60px;
-			font-size: 24px;
-			letter-spacing: -0.2px;
-		}
-		&__menu-mob{
-			display: block;
-		}
-		&__search{
-			margin-top: 30px;
-			.header__town{
-				.header__select{
-					width: 313px;
-					label{
-						width: 263px;
-					}
-				}
-			}
-		}
-		.header__menu-mob{
-			margin-top: 14px;
-			margin-left: auto;
-			display: block;
-		}
-	}
 	.metro{
 		padding: 20px 12px;
 		text-align: center;
@@ -279,28 +174,6 @@ $width_4: 483px;
 			.slider__nav{
 				margin-top: 25px;
 			}
-		}
-	}
-	.footer{
-		ul{
-			margin-bottom: 15px;
-			width: 100%;
-			li{
-				box-sizing:border-box;
-				padding: 0 75px;
-			}
-		}
-		&__contacts{
-			text-align: center;
-			width: 100%;
-			.footer__button {
-				width: 52%;
-				margin-left: auto;
-				margin-right: auto;
-			}
-		}
-		&__logo{
-			margin-top: 60px;
 		}
 	}
 }

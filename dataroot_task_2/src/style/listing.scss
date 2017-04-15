@@ -9,16 +9,30 @@ body{
 @import 'metro_icon';
 @import 'header';
 @import 'footer';
+.article_body{
+	align-items:stretch;
+	display: flex;
+	.google_map{
+		iframe{
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
 .header{
 	&__container{
-		padding: 12px 0 2px 0;
+		box-sizing: border-box;
+		padding-top: 12px;
+		padding-bottom: 2px;
 	}
 }
 .rent{
 	box-sizing: border-box;
 	max-width: 890px;
+	width: 890px;
 	margin: auto;
 	&__header{
+		padding: 0 20px;
 		.breadcrumb{
 			padding-top: 20px;
 			display: inline-flex;
@@ -32,6 +46,9 @@ body{
 				content: '/';
 			}
 			a:last-child:after{
+				display: none;
+			}
+			.breadcrumb_home{
 				display: none;
 			}
 		}
@@ -75,6 +92,7 @@ body{
 	&__items{
 		padding-top: 20px;
 		.rent__item{
+			position: relative;
 			margin-bottom: 12px;
 			background-color: #fff;
 			padding: 14px 20px 17px 20px;
@@ -151,32 +169,6 @@ body{
 						color: #000000;
 						font-size: 13px;
 						line-height: 20px;
-					}
-				}
-				.rent__slider_nav{
-					margin-top: 13px;
-    				padding-left: 3px;
-					width: 100%;
-					display: flex;
-					justify-content: center;
-					input[type='radio']{
-						position: absolute;
-						z-index: -5;
-						visibility: hidden;
-					}
-					label{
-						margin-right: 6px;
-						display: block;
-						background-color: #D8D8D8;
-						width: 8px;
-						height: 8px;
-						border-radius: 50%;
-					}
-					label:last-child{
-						margin-right: 0;
-					}
-					input[type='radio']:checked +label{
-						background-color: rgba(0,0,0,0.6);
 					}
 				}
 			}
@@ -307,6 +299,37 @@ body{
 					opacity: 0.7;
 				}
 			}
+			.rent__slider_nav{
+				right: 0;
+				left: 0;
+				bottom: 28px;
+				position: absolute;
+				display: flex;
+				justify-content: center;
+				input[type='radio']{
+					position: absolute;
+					z-index: -5;
+					visibility: hidden;
+				}
+				label{
+					margin-right: 6px;
+					display: block;
+					background-color: #D8D8D8;
+					width: 8px;
+					height: 8px;
+					border-radius: 50%;
+				}
+				label:last-child{
+					margin-right: 0;
+				}
+				input[type='radio']:checked +label{
+					background-color: rgba(0,0,0,0.6);
+				}
+			}
 		}
 	}
 }
+.google_map{
+	display: none;
+}
+@import 'responsive/responsive_listing.scss';

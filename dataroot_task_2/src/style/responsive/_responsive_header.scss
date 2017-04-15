@@ -1,0 +1,92 @@
+$width_1: 788px;
+$width_2: 570px;
+$width_3: 483px;
+@media screen and (max-width: $width_1) {
+	.header{
+		text-align: center;
+		&__interaction{
+			margin: 9px auto 0 auto;
+		}
+		&__title{
+			margin-top: 20px;
+		}
+		&__search{
+			text-align: left;
+			.header__town{
+				.header__select{
+					width: 250px;
+					label{
+						width: 200px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: $width_2){
+	.header{
+		&__title{
+			text-align: left;
+		}
+		&__search{
+			margin-top: 32px;
+			.header__town{
+			}
+			.rooms{
+				margin-top: 31px;
+			}
+			.header__submit{
+				margin-top: 30px;
+				padding: 10px 56px 11px 28px;
+			}
+		}
+	}
+}
+@media screen and (max-width: $width_3){
+	.header{
+		&__container{
+			padding: 20px 25px 26px 16px;
+		}
+		&__nav{
+			a{
+				display: none;
+			}
+			.nav__link_active{
+				display: block;
+			}
+			.header__logo{
+				display: block;
+				margin-top: 3px;
+				margin-right: 25px;
+			}
+		}
+		&__interaction{
+			display: none;
+		}
+		&__title{
+			margin-top: 40px;
+    		padding-right: 60px;
+			font-size: 24px;
+			letter-spacing: -0.2px;
+		}
+		&__menu-mob{
+			display: block;
+		}
+		&__search{
+			margin-top: 30px;
+			.header__town{
+				.header__select{
+					width: 313px;
+					label{
+						width: 263px;
+					}
+				}
+			}
+		}
+		.header__menu-mob{
+			margin-top: 14px;
+			margin-left: auto;
+			display: block;
+		}
+	}
+}

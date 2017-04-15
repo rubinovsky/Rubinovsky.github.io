@@ -333,6 +333,62 @@ body {
       display: inline-block;
       padding: 10px 41px 11px 42px; }
 
+@media screen and (max-width: 788px) {
+  .header {
+    text-align: center; }
+    .header__interaction {
+      margin: 9px auto 0 auto; }
+    .header__title {
+      margin-top: 20px; }
+    .header__search {
+      text-align: left; }
+      .header__search .header__town .header__select {
+        width: 250px; }
+        .header__search .header__town .header__select label {
+          width: 200px; } }
+
+@media screen and (max-width: 570px) {
+  .header__title {
+    text-align: left; }
+  .header__search {
+    margin-top: 32px; }
+    .header__search .rooms {
+      margin-top: 31px; }
+    .header__search .header__submit {
+      margin-top: 30px;
+      padding: 10px 56px 11px 28px; } }
+
+@media screen and (max-width: 483px) {
+  .header__container {
+    padding: 20px 25px 26px 16px; }
+  .header__nav a {
+    display: none; }
+  .header__nav .nav__link_active {
+    display: block; }
+  .header__nav .header__logo {
+    display: block;
+    margin-top: 3px;
+    margin-right: 25px; }
+  .header__interaction {
+    display: none; }
+  .header__title {
+    margin-top: 40px;
+    padding-right: 60px;
+    font-size: 24px;
+    letter-spacing: -0.2px; }
+  .header__menu-mob {
+    display: block; }
+  .header__search {
+    margin-top: 30px; }
+    .header__search .header__town .header__select {
+      width: 313px; }
+      .header__search .header__town .header__select label {
+        width: 263px; }
+  .header .header__menu-mob {
+    margin-top: 14px;
+    margin-left: auto;
+    display: block; } }
+
 .footer {
   padding: 60px 23px 0 23px;
   max-width: 844px;
@@ -427,6 +483,44 @@ body {
   .footer__logo {
     display: block;
     margin: 44px auto 0 auto; }
+
+@media screen and (max-width: 890px) {
+  .footer ul {
+    text-align: center;
+    width: 50%;
+    margin: 0; }
+    .footer ul li {
+      width: 100%; }
+  .footer__contacts {
+    text-align: center;
+    width: 50%; }
+    .footer__contacts .footer__social {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      margin: auto; }
+  .footer__logo {
+    width: 100%;
+    text-align: center; } }
+
+@media screen and (max-width: 483px) {
+  .footer ul {
+    margin-bottom: 15px;
+    width: 100%; }
+    .footer ul li {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 0 75px; }
+  .footer__contacts {
+    text-align: center;
+    width: 100%; }
+    .footer__contacts .footer__button {
+      width: 52%;
+      margin-left: auto;
+      margin-right: auto; }
+  .footer__logo {
+    margin-top: 60px; } }
 
 .metro {
   display: -webkit-box;
@@ -840,39 +934,9 @@ body {
     .telegram .telegram__slider .telegram__slide .telegram__img {
       display: none; }
     .telegram .telegram__slider .telegram__slide .telegram__info {
-      margin: auto; }
-  .footer ul {
-    text-align: center;
-    width: 50%;
-    margin: 0; }
-    .footer ul li {
-      width: 100%; }
-  .footer__contacts {
-    text-align: center;
-    width: 50%; }
-    .footer__contacts .footer__social {
-      display: -webkit-inline-box;
-      display: -webkit-inline-flex;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      margin: auto; }
-  .footer__logo {
-    width: 100%;
-    text-align: center; } }
+      margin: auto; } }
 
 @media screen and (max-width: 788px) {
-  .header {
-    text-align: center; }
-    .header__interaction {
-      margin: 9px auto 0 auto; }
-    .header__title {
-      margin-top: 20px; }
-    .header__search {
-      text-align: left; }
-      .header__search .header__town .header__select {
-        width: 250px; }
-        .header__search .header__town .header__select label {
-          width: 200px; }
   .metro {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -923,48 +987,10 @@ body {
         margin: 0 auto; } }
 
 @media screen and (max-width: 570px) {
-  .header__title {
-    text-align: left; }
-  .header__search {
-    margin-top: 32px; }
-    .header__search .rooms {
-      margin-top: 31px; }
-    .header__search .header__submit {
-      margin-top: 30px;
-      padding: 10px 56px 11px 28px; }
   .metrovka__items .metrovka__item {
     width: 320px; } }
 
 @media screen and (max-width: 483px) {
-  .header__container {
-    padding: 20px 25px 26px 16px; }
-  .header__nav a {
-    display: none; }
-  .header__nav .nav__link_active {
-    display: block; }
-  .header__nav .header__logo {
-    display: block;
-    margin-top: 3px;
-    margin-right: 25px; }
-  .header__interaction {
-    display: none; }
-  .header__title {
-    margin-top: 40px;
-    padding-right: 60px;
-    font-size: 24px;
-    letter-spacing: -0.2px; }
-  .header__menu-mob {
-    display: block; }
-  .header__search {
-    margin-top: 30px; }
-    .header__search .header__town .header__select {
-      width: 313px; }
-      .header__search .header__town .header__select label {
-        width: 263px; }
-  .header .header__menu-mob {
-    margin-top: 14px;
-    margin-left: auto;
-    display: block; }
   .metro {
     padding: 20px 12px;
     text-align: center;
@@ -1022,20 +1048,4 @@ body {
         .telegram .telegram__slider .telegram__slide .telegram__info ol li {
           margin-bottom: 20px; }
     .telegram .telegram__slider .slider__nav {
-      margin-top: 25px; }
-  .footer ul {
-    margin-bottom: 15px;
-    width: 100%; }
-    .footer ul li {
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box;
-      padding: 0 75px; }
-  .footer__contacts {
-    text-align: center;
-    width: 100%; }
-    .footer__contacts .footer__button {
-      width: 52%;
-      margin-left: auto;
-      margin-right: auto; }
-  .footer__logo {
-    margin-top: 60px; } }
+      margin-top: 25px; } }

@@ -1,0 +1,50 @@
+$width_1: 890px;
+$width_2: 483px;
+@media screen and (max-width: $width_1) {
+	.footer{
+		ul{
+			text-align: center;
+			width: 50%;
+			margin: 0;
+			li{
+				width: 100%;
+			}
+		}
+		&__contacts{
+			text-align: center;
+			width: 50%;
+			.footer__social{
+				display: inline-flex;
+				margin: auto;
+			}
+		}
+		&__logo{
+			width: 100%;
+			text-align: center;
+		}
+	}
+}
+@media screen and (max-width: $width_2){
+	.footer{
+		ul{
+			margin-bottom: 15px;
+			width: 100%;
+			li{
+				box-sizing:border-box;
+				padding: 0 75px;
+			}
+		}
+		&__contacts{
+			text-align: center;
+			width: 100%;
+			.footer__button {
+				width: 52%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+		&__logo{
+			margin-top: 60px;
+		}
+	}
+}

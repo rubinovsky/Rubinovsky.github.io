@@ -1,0 +1,133 @@
+$width_1: 1394px;
+$width_2: 1280px;
+$width_3: 802px;
+$width_4: 515px;
+@media screen and (min-width: $width_2) {
+	.header__container, .rent, .footer{
+		margin: 0;
+	}
+	.rent{
+		width: 890px;
+	}
+	.google_map{
+		width: 450px;
+		margin: 140px 0 0 13px;
+		display: block;
+	}
+	.google_map{
+		height: 594px;
+		width: 333px;
+	}
+}
+@media screen and (min-width: $width_1) {
+	.header__container, .rent, .footer{
+		margin: 0;
+	}
+	.rent{
+		width: 890px;
+	}
+	.google_map{
+		height: 799px;
+		width: 450px;
+		margin: 140px 0 0 13px;
+		display: block;
+	}
+}
+@media screen and (max-width: $width_3) {
+	.header__container{
+		padding-bottom: 10px;
+	}
+	.rent__photo{
+		margin-right: 0!important;
+		width: 100%;
+		img{
+			display: block;
+			margin: 0 auto 20px auto;
+			width: 70%;
+		}
+	}
+}
+@media screen and (max-width:$width_4) {
+	.header__container{
+		padding: 7px 18px 4px 15px;
+		.header__logo{
+			margin-right: 28px;
+		}
+	}
+	.rent{
+		.rent__header{
+			.breadcrumb{
+				a{
+					display: none;
+				}
+				.breadcrumb_home{
+					display: block!important;
+				}
+			}
+			h2{
+				font-size: 16px;
+			}
+			.rent__sort_box{
+				flex-wrap:wrap;
+				span{
+					width: 100%;
+					margin-bottom: 12px;
+				}
+				.rent__sort{
+					margin-right: 58px;
+					margin-left: 0;
+				}
+				a:after{
+					right: -25px;
+					top: 8px;
+				}
+			}
+		}
+		.rent__items{
+			padding-top: 31px;
+			.rent__item{
+				padding-bottom: 38px;
+				.rent__photo{
+					img{
+						width: 100%;
+					}
+				}
+				.rent__options{
+					width: 100%;
+					display: flex;
+					flex-wrap: wrap;
+					.rent__price{
+						margin-top: 26px;
+						width: 50%;
+						text-align: left;
+					}
+					.rent__dolars{
+						margin-top: 20px;
+						width: 150px;
+						margin-left: auto;
+						justify-content: flex-start;
+						.rate{
+							display: none;
+						}
+					}
+					.index__price{
+						width: 50%;
+					}
+					.contactme{
+						width: 50%;
+						justify-content: flex-end;
+						.contactme__phone{
+							margin-right: 3px;
+						}
+					}
+					.rent__next{
+						margin-top: 2px;
+					}
+					.rent__slider_nav{
+						bottom: 48px;
+					}
+				}
+			}
+		}
+	}
+}
