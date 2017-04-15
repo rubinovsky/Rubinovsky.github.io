@@ -28,7 +28,7 @@ gulp.task('browser-sync', function() {
 	});
 });
 gulp.task('pug', function(){
-	return gulp.src('src/template/index.pug')
+	return gulp.src(['src/template/*.pug','!src/template/_*.pug'])
 		.pipe(pug({
 			pretty: true
 		}))
