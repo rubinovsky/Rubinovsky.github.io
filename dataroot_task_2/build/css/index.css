@@ -121,6 +121,9 @@ body {
   padding-left: 25px;
   line-height: 18px; }
 
+.primary_button:focus {
+  outline: none; }
+
 .primary_button:hover {
   background-color: #50DB88;
   border: 1px solid #DFE3E6; }
