@@ -6,9 +6,11 @@ body{
 	font-weight: 500;
 }
 @import 'buttons';
+@import 'overflow_menu';
 @import 'metro_icon';
 @import 'header';
 @import 'footer';
+@import 'hamburger';
 .article_body{
 	align-items:stretch;
 	display: flex;
@@ -109,6 +111,7 @@ body{
 				opacity: 0.7;
 			}
 			.rent__infobox{
+				display: none;
 				width: 320px;
 				h3{
 					font-weight: 500;
@@ -176,6 +179,7 @@ body{
 				}
 			}
 			.rent__options{
+				display: none;
 				text-align: right;
 				width: 148px;
  				margin-left: auto;
@@ -269,8 +273,14 @@ body{
 						}
 					}
 				}
-				.rent__next{
-					margin-top: 30px;
+			}
+			.rent__nav{
+				margin-top: 20px;
+				display: flex;
+				width: 100%;
+				.rent__next, .rent__prev{
+					transition: .5s;
+					margin-left: auto;
 					position: relative;
 					text-align: left;
 					width: 112px;
@@ -286,35 +296,63 @@ body{
 					p:last-child{
 						color: rgba(0, 0, 0, 0.6);
 					}
+					i{
+						position: absolute;
+						top: 5px;
+						right: 1px;
+						display: block;
+						width: 11px;
+						height: 2px;
+						background-color: #979797;
+						&:after{
+							content: '';
+							display: block;
+							height: 6px;
+							width: 6px;
+							border-top: 2px solid #979797;
+							border-right: 2px solid #979797;
+							transform: rotate(45deg);
+							position: absolute;
+							top: -3px;
+							right: -1px;
+						}
+					}
+					&:hover{
+						p{
+							color: #30AD64;
+						}
+						i{
+							background-color: #30AD64;
+							&:after{
+								border-color: #30AD64;
+							}
+						}
+					}
 				}
-				.rent__next:after{
-					content: '';
-					position: absolute;
-					top: 5px;
-					right: 1px;
-					display: block;
-					width: 11px;
-					height: 8px;
-					background:transparent url('../img/sprite.png') no-repeat;
-					background-position: -128px 0;
-				}
-				.rent__next:hover{
-					opacity: 0.7;
+				.rent__prev{
+					margin-left: 0;
+					padding-left: 20px;
+					margin-right: auto;
+					i{
+						right: auto;
+						left: 1px;
+						&:after{
+							transform: rotate(-135deg);
+							right: auto;
+							left: -1px;
+						}
+					}
 				}
 			}
-			.rent__slider_nav{
+			.rent__pagination{
 				right: 0;
 				left: 0;
 				bottom: 28px;
 				position: absolute;
 				display: flex;
 				justify-content: center;
-				input[type='radio']{
-					position: absolute;
-					z-index: -5;
-					visibility: hidden;
-				}
-				label{
+				span{
+					cursor: pointer;
 					margin-right: 6px;
 					display: block;
 					background-color: #D8D8D8;
@@ -322,10 +360,10 @@ body{
 					height: 8px;
 					border-radius: 50%;
 				}
-				label:last-child{
+				span:last-child{
 					margin-right: 0;
 				}
-				input[type='radio']:checked +label{
+				.slider__pagination_active{
 					background-color: rgba(0,0,0,0.6);
 				}
 			}

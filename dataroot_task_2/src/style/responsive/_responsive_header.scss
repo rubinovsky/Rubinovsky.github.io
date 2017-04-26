@@ -40,6 +40,9 @@ $width_3: 483px;
 				padding: 10px 56px 11px 28px;
 			}
 		}
+		&__rooms{
+			margin-top: 10px;
+		}
 	}
 }
 @media screen and (max-width: $width_3){
@@ -48,7 +51,7 @@ $width_3: 483px;
 			padding: 20px 25px 26px 16px;
 		}
 		&__nav{
-			a{
+			.nav__link{
 				display: none;
 			}
 			.nav__link_active{

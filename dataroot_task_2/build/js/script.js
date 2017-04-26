@@ -2,6 +2,13 @@
 /////SELECT/////
 ////////////////
 $(document).ready(function(){
+	$('.hamburger__icon').click( function(){
+		$('body').toggleClass('body-overflow')
+		$('.hamburger').toggleClass('hamburger-open')
+		$('.js-blur').toggleClass('wrap-blur')
+		$(this).toggleClass('hamburger__icon-active')
+	})
+	$('.js-slider').listingSlider();
 	$('.header__select').click( function(){
 		if($(this).find('#radio_header').prop("checked") == true){
 			$(this).find('.option').slideDown(300);

@@ -5,9 +5,16 @@
     a.nav__link(class={nav__link_active: currentUrl === 'rent'} href="listing.html") Аренда
     a.nav__link(class={nav__link_active: currentUrl === 'sale'} href="#") Продажа  
     a.nav__link(class={nav__link_active: currentUrl === 'daily_rent'} href="#") Посуточно
-    a(class='nav__more nav__link' href="#") Еще
+    div(class='nav__more nav__link') Еще
+      .overflow__menu
+        a(href="#") Stop app
+        a(href="#") Restart app
+        a(href="#") Rename app
+        a(href="#") Edit routes and access
+        a(class='overflow__link-danger' href="#") Delete app
   .header__interaction
-    a(class='interaction__advert' href='#') Разместить объявление
+    a(class='interaction__advert' href='#') 
+      |
+      i
+      |Разместить объявление
     a(class='interaction__signin' href='#') Войти
-  a(href="#" class='header__menu-mob')
-    img(src="img/header__menu.png", alt="Меню")

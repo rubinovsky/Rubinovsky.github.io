@@ -7,137 +7,304 @@ html
     link(rel='stylesheet', href='css/normalize.css')
     link(rel='stylesheet', href='css/listing.css')
     link(href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet")
-    script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+    script(src="http://code.jquery.com/jquery-1.11.1.min.js")
+    script(src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js")
+    script(src='js/jquery.listing_slider.js')
+    script(src='js/script.js')
   body
-    .header
-      .header__container
-        - var currentUrl = 'rent'//Для active
-        include _header
-    article(class='article_body')
-      section(class='rent')
-        .rent__header
-          .breadcrumb
-            a(href="#") Долгосрочная аренда
-            a(href="#") Квартиры
-            a(href="#") Киев
-            a(class='breadcrumb_home' href="#") Назад на главую
-          h2 Долгосрочная аренда квартир в Киеве
-          .rent__sort_box
-            span 3 варианта размещения
-            a(class='rent__sort' href="#") Сортировать
-            a(href="#") Валюта
-        .rent__items
-          .rent__item
-            a(class='rent__photo' href="#")
-              img(src="img/listing__item_1.png", alt="Квартира фото")
-            .rent__infobox
-              h3 
-                a(href="#") 2 комн., Дарницкий р-н, Пчелки 2б
-              .rent__metro
-                span 
-                  |
-                  i(class='metro_point metro_green')
-                  |Позняки
-                span 30 мин пешком
-              .rent_features
-                h5 Особенности 
-                .rent__specifications
-                  p 120 кв. м.   
-                  p этаж 1 из 5
-                p(class='rent__info') Комунальные включены, без старой мебели, новый дом, дизайнерский ремонт, тихий район, удобная транспортная развязка, шикарный вид на Днепр.
-            .rent__options
-              span(class='rent__price') 11 600 грн
-              .rent__dolars
-                p 460$
-                p(class='rate') курс
-              span(class='index__price high__price') Высокая цена
-              .contactme
-                a(class='contactme__phone' href="#")
+    include _hamburger
+    article.js-blur
+      section.header
+        .header__container
+          - var currentUrl = 'rent'//Для active
+          include _header
+      article(class='article_body')
+        section(class='rent')
+          .rent__header
+            .breadcrumb
+              a(href="#") Долгосрочная аренда
+              a(href="#") Квартиры
+              a(href="#") Киев
+              a(class='breadcrumb_home' href="#") Назад на главую
+            h2 Долгосрочная аренда квартир в Киеве
+            .rent__sort_box
+              span 3 варианта размещения
+              a(class='rent__sort' href="#") Сортировать
+              a(href="#") Валюта
+          .rent__items
+            div(class='rent__item js-slider')
+              a(class='rent__photo' href="#")
+                img( src="img/listing__item_1.png", alt="Квартира фото")
+              .rent__infobox
+                h3 
+                  a(href="#") 2 комн., Дарницкий р-н, Пчелки 2б
+                .rent__metro
+                  span 
+                    |
+                    i(class='metro_point metro_green')
+                    |Позняки
+                  span 30 мин пешком
+                .rent_features
+                  h5 Особенности 
+                  .rent__specifications
+                    p 120 кв. м.   
+                    p этаж 1 из 5
+                  p(class='rent__info') Комунальные включены, без старой мебели, новый дом, дизайнерский ремонт, тихий район, удобная транспортная развязка, шикарный вид на Днепр.
+              .rent__options
+                span(class='rent__price') 11 600 грн
+                .rent__dolars
+                  p 460$
+                  p(class='rate') курс
+                span(class='index__price high__price') Высокая цена
+                .contactme
+                  a(class='contactme__phone' href="#")
+                    i
+                  a(class='contactme__massege' href="#")
+                    i
+              .rent__infobox
+                h3 
+                  a(href="#") 2 комн., Оболонский р-н, Полярная 20
+                .rent__metro
+                  span 
+                    |
+                    i(class='metro_point metro_blue')
+                    |Героев Днепра 
+                  span 10 мин пешком
+                .rent_features
+                  h5 Особенности 
+                  .rent__specifications
+                    p 78 кв. м.   
+                    p этаж 2 из 5
+                  p(class='rent__info') Без комунальных, евроремонт, хозяева в Польше, 15 мин. до озера, кофеварка, уборщица.
+              .rent__options
+                span(class='rent__price') 11 600 грн
+                .rent__dolars
+                  p 460$
+                  p(class='rate') курс
+                span(class='index__price low__price') Высокая цена
+                .contactme
+                  a(class='contactme__phone' href="#")
+                    i
+                  a(class='contactme__massege' href="#")
+                    i
+              .rent__infobox
+                h3 
+                  a(href="#") 2 комн., Оболонский р-н, Полярная 20
+                .rent__metro
+                  span 
+                    |
+                    i(class='metro_point metro_blue')
+                    |Героев Днепра 
+                  span 10 мин пешком
+                .rent_features
+                  h5 Особенности 
+                  .rent__specifications
+                    p 78 кв. м.   
+                    p этаж 2 из 5
+                  p(class='rent__info') Без комунальных, евроремонт, хозяева в Польше, 15 мин. до озера, кофеварка, уборщица.
+              .rent__options
+                span(class='rent__price') 11 600 грн
+                .rent__dolars
+                  p 460$
+                  p(class='rate') курс
+                span(class='index__price low__price') Высокая цена
+                .contactme
+                  a(class='contactme__phone' href="#")
+                    i
+                  a(class='contactme__massege' href="#")
+                    i
+              .rent__nav
+                a(href="#" class='js-slider-prev rent__prev')
+                  p Прев. раздел
                   i
-                a(class='contactme__massege' href="#")
+                  p Инфраструктура
+                a(href="#" class='js-slider-next rent__next')
+                  p След. раздел
                   i
-              a(href="#" class='rent__next')
-                p След. раздел
-                p Инфраструктура
-            .rent__slider_nav
-                input(id='rent__slide_item1_1' type="radio" name='rent__slide_item1' checked)
-                label(for="rent__slide_item1_1")
-                input(id='rent__slide_item1_2' type="radio" name='rent__slide_item1')
-                label(for="rent__slide_item1_2")
-          .rent__item
-            a(class='rent__photo' href="#")
-              img(src="img/listing__item_1.png", alt="Квартира фото")
-            .rent__infobox
-              h3 
-                a(href="#") 2 комн., Дарницкий р-н, Пчелки 2б
-              .rent__metro
-                span 
-                  |
-                  i(class='metro_point metro_green')
-                  |Позняки
-                span 30 мин пешком
-              .rent_features
-                h5 Особенности 
-                .rent__specifications
-                  p 120 кв. м.   
-                  p этаж 1 из 5
-                p(class='rent__info') Комунальные включены, без старой мебели, новый дом, дизайнерский ремонт, тихий район, удобная транспортная развязка, шикарный вид на Днепр.
-            .rent__options
-              span(class='rent__price') 11 600 грн
-              .rent__dolars
-                p 460$
-                p(class='rate') курс
-              span(class='index__price low__price') Высокая цена
-              .contactme
-                a(class='contactme__phone' href="#")
+                  p Инфраструктура
+              .rent__pagination
+            div(class='rent__item js-slider')
+              a(class='rent__photo' href="#")
+                img(src="img/listing__item_2.png", alt="Квартира фото")
+              .rent__infobox
+                h3 
+                  a(href="#") 2 комн., Оболонский р-н, Полярная 20
+                .rent__metro
+                  span 
+                    |
+                    i(class='metro_point metro_blue')
+                    |Героев Днепра 
+                  span 10 мин пешком
+                .rent_features
+                  h5 Особенности 
+                  .rent__specifications
+                    p 78 кв. м.   
+                    p этаж 2 из 5
+                  p(class='rent__info') Без комунальных, евроремонт, хозяева в Польше, 15 мин. до озера, кофеварка, уборщица.
+              .rent__options
+                span(class='rent__price') 11 600 грн
+                .rent__dolars
+                  p 460$
+                  p(class='rate') курс
+                span(class='index__price low__price') Высокая цена
+                .contactme
+                  a(class='contactme__phone' href="#")
+                    i
+                  a(class='contactme__massege' href="#")
+                    i
+              .rent__infobox
+                h3 
+                  a(href="#") 2 комн., Дарницкий р-н, Пчелки 2б
+                .rent__metro
+                  span 
+                    |
+                    i(class='metro_point metro_green')
+                    |Позняки
+                  span 30 мин пешком
+                .rent_features
+                  h5 Особенности 
+                  .rent__specifications
+                    p 120 кв. м.   
+                    p этаж 1 из 5
+                  p(class='rent__info') Комунальные включены, без старой мебели, новый дом, дизайнерский ремонт, тихий район, удобная транспортная развязка, шикарный вид на Днепр.
+              .rent__options
+                span(class='rent__price') 11 600 грн
+                .rent__dolars
+                  p 460$
+                  p(class='rate') курс
+                span(class='index__price high__price') Высокая цена
+                .contactme
+                  a(class='contactme__phone' href="#")
+                    i
+                  a(class='contactme__massege' href="#")
+                    i
+              .rent__infobox
+                h3 
+                  a(href="#") 2 комн., Оболонский р-н, Полярная 20
+                .rent__metro
+                  span 
+                    |
+                    i(class='metro_point metro_blue')
+                    |Героев Днепра 
+                  span 10 мин пешком
+                .rent_features
+                  h5 Особенности 
+                  .rent__specifications
+                    p 78 кв. м.   
+                    p этаж 2 из 5
+                  p(class='rent__info') Без комунальных, евроремонт, хозяева в Польше, 15 мин. до озера, кофеварка, уборщица.
+              .rent__options
+                span(class='rent__price') 11 600 грн
+                .rent__dolars
+                  p 460$
+                  p(class='rate') курс
+                span(class='index__price low__price') Высокая цена
+                .contactme
+                  a(class='contactme__phone' href="#")
+                    i
+                  a(class='contactme__massege' href="#")
+                    i
+              .rent__nav
+                a(href="#" class='js-slider-prev rent__prev')
+                  p Прев. раздел
                   i
-                a(class='contactme__massege' href="#")
+                  p Инфраструктура
+                a(href="#" class='js-slider-next rent__next')
+                  p След. раздел
                   i
-              a(href="#" class='rent__next')
-                p След. раздел
-                p Инфраструктура
-            .rent__slider_nav
-                  input(id='rent__slide_item2_1' type="radio" name='rent__slide_item2' checked)
-                  label(for="rent__slide_item2_1")
-                  input(id='rent__slide_item2_2' type="radio" name='rent__slide_item2')
-                  label(for="rent__slide_item2_2")
-          .rent__item
-            a(class='rent__photo' href="#")
-              img(src="img/listing__item_1.png", alt="Квартира фото")
-            .rent__infobox
-              h3 
-                a(href="#") 2 комн., Дарницкий р-н, Пчелки 2б
-              .rent__metro
-                span 
-                  |
-                  i(class='metro_point metro_green')
-                  |Позняки
-                span 30 мин пешком
-              .rent_features
-                h5 Особенности 
-                .rent__specifications
-                  p 120 кв. м.   
-                  p этаж 1 из 5
-                p(class='rent__info') Комунальные включены, без старой мебели, новый дом, дизайнерский ремонт, тихий район, удобная транспортная развязка, шикарный вид на Днепр.
-            .rent__options
-              span(class='rent__price') 11 600 грн
-              .rent__dolars
-                p 460$
-                p(class='rate') курс
-              span(class='index__price low__price') Высокая цена
-              .contactme
-                a(class='contactme__phone' href="#")
+                  p Инфраструктура
+              .rent__pagination
+            div(class='rent__item js-slider')
+              a(class='rent__photo' href="#")
+                img(src="img/listing__item_3.png", alt="Квартира фото")
+              .rent__infobox
+                h3 
+                  a(href="#") 2 комн., Оболонский р-н, Полярная 20
+                .rent__metro
+                  span 
+                    |
+                    i(class='metro_point metro_blue')
+                    |Героев Днепра 
+                  span 10 мин пешком
+                .rent_features
+                  h5 Особенности 
+                  .rent__specifications
+                    p 78 кв. м.   
+                    p этаж 2 из 5
+                  p(class='rent__info') Без комунальных, евроремонт, хозяева в Польше, 15 мин. до озера, кофеварка, уборщица.
+              .rent__options
+                span(class='rent__price') 11 600 грн
+                .rent__dolars
+                  p 460$
+                  p(class='rate') курс
+                span(class='index__price low__price') Высокая цена
+                .contactme
+                  a(class='contactme__phone' href="#")
+                    i
+                  a(class='contactme__massege' href="#")
+                    i
+              .rent__infobox
+                h3 
+                  a(href="#") 2 комн., Дарницкий р-н, Пчелки 2б
+                .rent__metro
+                  span 
+                    |
+                    i(class='metro_point metro_green')
+                    |Позняки
+                  span 30 мин пешком
+                .rent_features
+                  h5 Особенности 
+                  .rent__specifications
+                    p 120 кв. м.   
+                    p этаж 1 из 5
+                  p(class='rent__info') Комунальные включены, без старой мебели, новый дом, дизайнерский ремонт, тихий район, удобная транспортная развязка, шикарный вид на Днепр.
+              .rent__options
+                span(class='rent__price') 11 600 грн
+                .rent__dolars
+                  p 460$
+                  p(class='rate') курс
+                span(class='index__price high__price') Высокая цена
+                .contactme
+                  a(class='contactme__phone' href="#")
+                    i
+                  a(class='contactme__massege' href="#")
+                    i
+              .rent__infobox
+                h3 
+                  a(href="#") 2 комн., Оболонский р-н, Полярная 20
+                .rent__metro
+                  span 
+                    |
+                    i(class='metro_point metro_blue')
+                    |Героев Днепра 
+                  span 10 мин пешком
+                .rent_features
+                  h5 Особенности 
+                  .rent__specifications
+                    p 78 кв. м.   
+                    p этаж 2 из 5
+                  p(class='rent__info') Без комунальных, евроремонт, хозяева в Польше, 15 мин. до озера, кофеварка, уборщица.
+              .rent__options
+                span(class='rent__price') 11 600 грн
+                .rent__dolars
+                  p 460$
+                  p(class='rate') курс
+                span(class='index__price low__price') Высокая цена
+                .contactme
+                  a(class='contactme__phone' href="#")
+                    i
+                  a(class='contactme__massege' href="#")
+                    i
+              .rent__nav
+                a(href="#" class='js-slider-prev rent__prev')
+                  p Прев. раздел
                   i
-                a(class='contactme__massege' href="#")
+                  p Инфраструктура
+                a(href="#" class='js-slider-next rent__next')
+                  p След. раздел
                   i
-              a(href="#" class='rent__next')
-                p След. раздел
-                p Инфраструктура
-            .rent__slider_nav
-                  input(id='rent__slide_item3_1' type="radio" name='rent__slide_item3' checked)
-                  label(for="rent__slide_item3_1")
-                  input(id='rent__slide_item3_2' type="radio" name='rent__slide_item3')
-                  label(for="rent__slide_item3_2")
+                  p Инфраструктура
+              .rent__pagination
       .google_map
         iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d898.197780464774!2d30.52247933538888!3d50.45065605048389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1492271198782" frameborder="0" allowfullscreen)
     include _footer
