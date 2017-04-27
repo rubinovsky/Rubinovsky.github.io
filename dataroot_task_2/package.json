@@ -25,5 +25,8 @@
     "gulp-uglifyjs": "^0.6.2",
     "imagemin-pngquant": "^4.2.2",
     "pug": "^2.0.0-beta11"
+  },
+  "dependencies": {
+    "jquery-touchswipe": "^1.6.15"
   }
 }
