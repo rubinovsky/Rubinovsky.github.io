@@ -1074,7 +1074,10 @@ body {
 
 @media screen and (max-width: 700px) {
   .request {
+    overflow: auto;
+    top: 5%;
     width: 80%;
+    max-height: 90%;
     margin: auto; }
     .request__config form .request__locality {
       text-align: center;

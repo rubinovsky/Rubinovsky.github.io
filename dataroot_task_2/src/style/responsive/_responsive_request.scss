@@ -56,11 +56,11 @@ $width_3: 450px;
 }
 @media screen and (max-width: $width_2) {
 	.request {
+		overflow: auto;
+		top: 5%;
 		width: 80%;
+		max-height: 90%;
 		margin: auto;
-		&__info {
-			
-		}
 		&__config {
 			form{
 				.request__locality{
