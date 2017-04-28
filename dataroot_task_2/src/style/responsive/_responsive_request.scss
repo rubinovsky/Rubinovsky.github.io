@@ -1,0 +1,147 @@
+$width_1: 1000px;
+$width_2: 700px;
+$width_3: 450px;
+@media screen and (max-width: $width_1) {
+	.request {
+		width: 650px;
+		flex-direction: column;
+		&__info {
+			width: 100%;
+			box-sizing: border-box;
+			padding-bottom: 20px;
+		}
+		&__config {
+			width: 100%;
+			padding-bottom: 20px;
+			form{
+				display: flex;
+				flex-wrap: wrap;
+				width: 100%;
+				box-sizing: border-box;
+				align-items: flex-end;
+				.request__locality{
+					text-align: center;
+					width: 100%;
+				}
+				.request__select{
+					width: 45%;
+					margin-right: 5%;
+				}
+				.request__rooms{
+					width: 45%;
+					margin: 0;
+					margin-left: 5%;
+				}	
+				.request__user_info{
+					margin-top: 20px;
+					width: 100%;
+					input[type='text']{
+						margin-bottom: 0;
+						width: 45%;
+					}
+					input:first-child{
+						margin-right: 4%;
+					}
+					input:last-child{
+						margin-left: 4%;
+					}
+				}
+				input[type='submit']{
+					margin: 30px auto 0 auto;
+					width: 30%;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: $width_2) {
+	.request {
+		width: 80%;
+		margin: auto;
+		&__info {
+			
+		}
+		&__config {
+			form{
+				.request__locality{
+					text-align: center;
+					width: 100%;
+				}
+				.request__select{
+					width: 100%;
+					margin: 0;
+				}
+				.request__rooms{
+					margin: 0;
+					margin-top: 10px;
+					width: 100%;
+				}	
+				.request__user_info{
+					width: 100%;
+					input[type='text']{
+						margin-top: 10px;
+						width: 100%;
+					}
+					input:last-child{
+						margin:0;
+						margin-top: 10px;
+					}
+				}
+				input[type='submit']{
+					margin: 30px auto 0 auto;
+					width: 60%;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: $width_3) {
+	.request {
+		border-radius: 10px;
+		top: 20px;
+		&__info {
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			padding: 25px 10px 10px 10px;
+			h3{
+				font-size: 20px;
+			}
+			p{
+				font-size: 13px;
+			}
+		}
+		&__config {
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			padding: 10px 10px 10px 10px;
+			form{
+				.request__locality{
+					text-align: center;
+					width: 100%;
+				}
+				.request__select{
+					width: 100%;
+					margin: 0;
+				}
+				.request__rooms{
+					margin: 0;
+					margin-top: 10px;
+					width: 100%;
+				}	
+				.request__user_info{
+					margin-top: 10px;
+					input[type='text']{
+						margin: 0;
+					}
+					input[type='text']:last-child{
+						margin-top: 10px;
+					}
+				}
+				input[type='submit']{
+					margin-top: 15px;
+					width: 100%;
+				}
+			}
+		}
+	}
+}

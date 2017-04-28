@@ -10,7 +10,9 @@
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.touchSwipe.min.js"></script>
     <script src="js/jquery.listing_slider.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/jquery.modal.js"></script>
+    <script src="js/jquery.select.js"></script>
+    <script src="js/listing.js"></script>
   </head>
   <body>
     <div class="hamburger"><a class="hamburger__logo" href="index.html"><img src="img/logo.svg" alt="Logo"></a>
@@ -18,7 +20,7 @@
            <i></i>Разместить объявление</a><a href="#">Войти</a></div>
     </div>
     <div class="hamburger__icon"><i></i></div>
-    <article class="js-blur">
+    <article class="js-wrap">
       <section class="header">
         <div class="header__container">
           <div class="header__top">
@@ -246,40 +248,79 @@
             </div>
           </div>
         </section>
+        <div class="google_map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d898.197780464774!2d30.52247933538888!3d50.45065605048389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1492271198782" frameborder="0" allowfullscreen></iframe>
+        </div>
       </article>
-      <div class="google_map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d898.197780464774!2d30.52247933538888!3d50.45065605048389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1492271198782" frameborder="0" allowfullscreen></iframe>
-      </div>
+      <footer class="footer">
+        <ul class="footer__metrovka">
+          <li><a href="#">Metrovka</a></li>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Пресса о нас</a></li>
+          <li><a href="#">Пользовательское соглашение</a></li>
+          <li><a href="#">Карта сайта</a></li>
+          <li><a href="#">Помощь</a></li>
+        </ul>
+        <ul class="footer__partnership">
+          <li><a href="#">Партнерство</a></li>
+          <li><a href="#">Как разместить обьявление</a></li>
+          <li><a href="#">Инструменты продвижения</a></li>
+          <li><a href="#">Правила заполнения объявлений</a></li>
+        </ul>
+        <ul class="footer__more">
+          <li><a href="#">Узнайте больше</a></li>
+          <li><a href="#">Бонусная программа Bonus+</a></li>
+          <li><a href="#">Telegram Metrovka Bot</a></li>
+          <li><a href="#">Как работает поиск</a></li>
+          <li><a href="#">Как пользоваться избранным</a></li>
+        </ul>
+        <div class="footer__contacts">
+          <h4>Контакты</h4>
+          <div class="footer__social"><a class="icon_fb" href="#"></a><a class="icon_vk" href="#"></a><a class="icon_insta" href="#"></a></div>
+          <p class="footer__street">ул. Жилянская, 37</p>
+          <p class="footer__town">Киев, 01033</p><a class="footer__emial" href="mailto:info@metrovka.ua">info@metrovka.ua</a><a class="footer__button primary_button" href="#">Оставить заявку</a>
+        </div>
+        <div class="footer__logo"><a href="#"><img src="img/logo_footer.png" alt="Logo"></a></div>
+      </footer>
     </article>
-    <footer class="footer">
-      <ul class="footer__metrovka">
-        <li><a href="#">Metrovka</a></li>
-        <li><a href="#">О компании</a></li>
-        <li><a href="#">Пресса о нас</a></li>
-        <li><a href="#">Пользовательское соглашение</a></li>
-        <li><a href="#">Карта сайта</a></li>
-        <li><a href="#">Помощь</a></li>
-      </ul>
-      <ul class="footer__partnership">
-        <li><a href="#">Партнерство</a></li>
-        <li><a href="#">Как разместить обьявление</a></li>
-        <li><a href="#">Инструменты продвижения</a></li>
-        <li><a href="#">Правила заполнения объявлений</a></li>
-      </ul>
-      <ul class="footer__more">
-        <li><a href="#">Узнайте больше</a></li>
-        <li><a href="#">Бонусная программа Bonus+</a></li>
-        <li><a href="#">Telegram Metrovka Bot</a></li>
-        <li><a href="#">Как работает поиск</a></li>
-        <li><a href="#">Как пользоваться избранным</a></li>
-      </ul>
-      <div class="footer__contacts">
-        <h4>Контакты</h4>
-        <div class="footer__social"><a class="icon_fb" href="#"></a><a class="icon_vk" href="#"></a><a class="icon_insta" href="#"></a></div>
-        <p class="footer__street">ул. Жилянская, 37</p>
-        <p class="footer__town">Киев, 01033</p><a class="footer__emial" href="mailto:info@metrovka.ua">info@metrovka.ua</a><a class="footer__button primary_button" href="request_modal.html">Оставить заявку</a>
+    <div class="request">
+      <div class="request__info">
+        <h3>Оставить заявку</h3>
+        <p>Нет времени искать по сайту? Заполняй критерии поиска и получай акутальные объявления как только они появляются на Metrovka.</p>
       </div>
-      <div class="footer__logo"><a href="#"><img src="img/logo_footer.png" alt="Logo"></a></div>
-    </footer>
+      <div class="request__config">
+        <form action="#">
+          <div class="request__locality">
+            <input id="request_district" type="radio" name="request_locality" value="district" checked>
+            <label for="request_district">Район</label>
+            <input id="request_metro" type="radio" name="request_locality" value="metro">
+            <label for="request_metro">Метро</label>
+          </div>
+          <div class="request__select">
+            <select class="js-request-slct" name="request__select">
+              <option value="holoseevskyy">Голосеевский</option>
+              <option value="solomenskyy">Соломенский</option>
+            </select>
+          </div>
+          <div class="request__rooms"><span>Кол-во комнат</span>
+            <input type="checkbox" id="request_room_1" value="1">
+            <label for="request_room_1">1</label>
+            <input type="checkbox" id="request_room_2" value="2">
+            <label for="request_room_2">2</label>
+            <input type="checkbox" id="request_room_3" value="3">
+            <label for="request_room_3">3</label>
+            <input type="checkbox" id="request_room_4" value="4">
+            <label for="request_room_4">4</label>
+            <input type="checkbox" id="request_room_5+" value="5+">
+            <label for="request_room_5+">5+</label>
+          </div>
+          <div class="request__user_info">
+            <input class="form_name" type="text" name="name" placeholder="Как вас зовут?">
+            <input class="form_email" type="text" name="email" placeholder="Email">
+          </div>
+          <input class="primary_button" type="submit" value="Оставить заявку">
+        </form>
+      </div><a class="request__close" href="#">x</a>
+    </div>
   </body>
 </html>

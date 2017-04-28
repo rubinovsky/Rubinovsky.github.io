@@ -9,24 +9,25 @@ html
     link(href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet")
     script(src="https://code.jquery.com/jquery-3.2.1.min.js")
     script(src='js/jquery.select.js')
+    script(src='js/jquery.modal.js')
     script(src='js/index.js')
   body
     include _hamburger
-    article.js-blur
+    article.js-wrap
       section.header
         .header__container
           include _header
           h1.header__title Поиск недвижимости в Украине
-          form(class='header__search' action="#")
+          form(class='header__search' id='search' action="#")
             .header__town
               span Выберите город
               div(class="header__select")
                 select(class='js-header-slct' name="header__select")
-                  option(value="1") Киев
-                  option(value="2") Львов
-                  option(value="3") Одесса
-                  option(value="4") Кривой рог
-                  option(value="5") Луцк
+                  option(value="Kiev") Киев
+                  option(value="Lviv") Львов
+                  option(value="Odessa") Одесса
+                  option(value="Krivoy_rog") Кривой рог
+                  option(value="Lutsk") Луцк
             .header__rooms
               span Кол-во комнат
               input(type="checkbox" id="room_1" value="1")
@@ -53,13 +54,9 @@ html
                 label(for="rooms_offer_office") Офисы
               .metro__select
                   select(class='js-metro-slct' name="metro-slct")
-                    option(value="1") Политехнический институт
-                    option(value="2") Контрактовая площадь
-                    option(value="3") Политехнический институт
-                    option(value="4") Золотые ворота
-                    option(value="5") Контрактовая площадь
-                    option(value="6") Золотые ворота
-                    option(value="7") Политехнический институт
+                    option(value="polytechnical") Политехнический институт
+                    option(value="kontraktova") Контрактовая площадь
+                    option(value="zoloti") Золотые ворота
               input(type="submit" class='primary_button' value='Показать результаты поиска')
         .offer__img
           img(src="img/metro_bg.jpg", alt="Метро")
@@ -304,3 +301,4 @@ html
               span.blog__time 2 мин чтения
         a(class='blog__more' href="#") Перейти на страницу блога
       include _footer
+    include _request

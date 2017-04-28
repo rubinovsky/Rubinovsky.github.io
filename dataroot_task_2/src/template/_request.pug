@@ -1,0 +1,32 @@
+.request
+  .request__info
+    h3 Оставить заявку
+    p Нет времени искать по сайту? Заполняй критерии поиска и получай акутальные объявления как только они появляются на Metrovka.
+  .request__config
+    form(action="#")
+      .request__locality
+        input(id='request_district' type="radio" name='request_locality' value='district' checked)
+        label(for="request_district") Район
+        input(id='request_metro' type="radio" name='request_locality' value='metro')
+        label(for="request_metro") Метро
+      .request__select
+        select(class='js-request-slct' name="request__select")
+          option(value="holoseevskyy") Голосеевский
+          option(value="solomenskyy") Соломенский
+      .request__rooms
+        span Кол-во комнат
+        input(type="checkbox" id="request_room_1" value="1")
+        label(for="request_room_1") 1
+        input(type="checkbox" id="request_room_2" value="2")
+        label(for="request_room_2") 2
+        input(type="checkbox" id="request_room_3" value="3")
+        label(for="request_room_3") 3
+        input(type="checkbox" id="request_room_4" value="4")
+        label(for="request_room_4") 4
+        input(type="checkbox" id="request_room_5+" value="5+")
+        label(for="request_room_5+") 5+
+      .request__user_info
+        input(class='form_name' type="text" name='name' placeholder='Как вас зовут?')
+        input(class='form_email' type="text" name='email' placeholder='Email')
+      input(class='primary_button' type="submit" value='Оставить заявку')
+  a(class='request__close' href="#") x
