@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/request.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="js/select.js"></script>
+    <script src="js/jquery.select.js"></script>
+    <script src="js/request.js"></script>
   </head>
   <body>
     <div class="request">
@@ -25,14 +26,15 @@
             <label for="request_metro">Метро</label>
           </div>
           <div class="request__select">
-            <div class="slct wrap_select">
-              <input id="radio_request" type="radio" name="request_district">
-              <label for="radio_request">Голосеевский</label>
-              <input class="radio" id="request_golos" type="radio" name="request_district" checked>
-              <label class="option" for="request_golos">Голосеевский</label>
-              <input class="radio" id="request_soloma" type="radio" name="request_district" checked>
-              <label class="option" for="request_soloma">Соломенский</label>
-            </div>
+            <select class="js-request-slct" name="request__select">
+              <option value="1">Голосеевский</option>
+              <option value="2">Соломенский</option>
+              <option value="3">Голосеевский</option>
+              <option value="4">Соломенский</option>
+              <option value="5">Голосеевский</option>
+              <option value="6">Соломенский</option>
+              <option value="7">Голосеевский</option>
+            </select>
           </div>
           <div class="rooms"><span>Кол-во комнат</span>
             <input type="checkbox" id="room_1" value="1">

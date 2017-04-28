@@ -8,7 +8,8 @@ html
     link(rel='stylesheet', href='css/index.css')
     link(href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet")
     script(src="https://code.jquery.com/jquery-3.2.1.min.js")
-    script(src='js/script.js')
+    script(src='js/jquery.select.js')
+    script(src='js/index.js')
   body
     include _hamburger
     article.js-blur
@@ -20,15 +21,12 @@ html
             .header__town
               span Выберите город
               div(class="header__select")
-                div(class="slct wrap_select")
-                  input(id='radio_header' type="radio" name='town__choice' )
-                  label(for="radio_header") Киев
-                  input(class='radio' id='radio_kiyv' type="radio" name='town__choice' checked)
-                  label(class='option' for="radio_kiyv") Киев
-                  input(class='radio' id='radio_Lviv' type="radio" name='town__choice')
-                  label(class='option' for="radio_Lviv") Львов
-                  input(class='radio' id='radio_Odessa' type="radio" name='town__choice')
-                  label(class='option' for="radio_Odessa") Одесса
+                select(class='js-header-slct' name="header__select")
+                  option(value="1") Киев
+                  option(value="2") Львов
+                  option(value="3") Одесса
+                  option(value="4") Кривой рог
+                  option(value="5") Луцк
             .header__rooms
               span Кол-во комнат
               input(type="checkbox" id="room_1" value="1")
@@ -54,27 +52,14 @@ html
                 input(id='rooms_offer_office' type="radio" name='type_rooms_offer' value='office')
                 label(for="rooms_offer_office") Офисы
               .metro__select
-                div(class="slct wrap_select")
-                  input(id='radio_metro' type="radio" name='metro' )
-                  label(for="radio_metro")
-                    |
-                    i(class='metro_point metro_red') 
-                    |Политехнический институт
-                  input(class='radio' id='kpi' type="radio" name='metro' checked)
-                  label(class='option' for="kpi")
-                    |
-                    i(class='metro_point metro_red') 
-                    |Политехнический институт
-                  input(class='radio' id='kontraktova' type="radio" name='metro')
-                  label(class='option' for="kontraktova")
-                    |
-                    i(class='metro_point metro_blue') 
-                    |Контрактовая площадь
-                  input(class='radio' id='zoloti' type="radio" name='metro')
-                  label(class='option' for="zoloti")
-                    |
-                    i(class='metro_point metro_green') 
-                    |Золотые ворота
+                  select(class='js-metro-slct' name="metro-slct")
+                    option(value="1") Политехнический институт
+                    option(value="2") Контрактовая площадь
+                    option(value="3") Политехнический институт
+                    option(value="4") Золотые ворота
+                    option(value="5") Контрактовая площадь
+                    option(value="6") Золотые ворота
+                    option(value="7") Политехнический институт
               input(type="submit" class='primary_button' value='Показать результаты поиска')
         .offer__img
           img(src="img/metro_bg.jpg", alt="Метро")
@@ -319,16 +304,3 @@ html
               span.blog__time 2 мин чтения
         a(class='blog__more' href="#") Перейти на страницу блога
       include _footer
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,7 +8,8 @@ html
     link(rel='stylesheet', href='css/request.css')
     link(href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet")
     script(src="https://code.jquery.com/jquery-3.2.1.min.js")
-    script(src='js/select.js')
+    script(src='js/jquery.select.js')
+    script(src='js/request.js')
   body
     .request
       .request__info
@@ -22,13 +23,14 @@ html
             input(id='request_metro' type="radio" name='request_locality' value='metro')
             label(for="request_metro") Метро
           .request__select
-            div(class="slct wrap_select")
-              input(id='radio_request' type="radio" name='request_district' )
-              label(for="radio_request") Голосеевский
-              input(class='radio' id='request_golos' type="radio" name='request_district' checked)
-              label(class='option' for="request_golos") Голосеевский
-              input(class='radio' id='request_soloma' type="radio" name='request_district' checked)
-              label(class='option' for="request_soloma") Соломенский
+            select(class='js-request-slct' name="request__select")
+              option(value="1") Голосеевский
+              option(value="2") Соломенский
+              option(value="3") Голосеевский
+              option(value="4") Соломенский
+              option(value="5") Голосеевский
+              option(value="6") Соломенский
+              option(value="7") Голосеевский
           .rooms
             span Кол-во комнат
             input(type="checkbox" id="room_1" value="1")

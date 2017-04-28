@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/jquery.select.js"></script>
+    <script src="js/index.js"></script>
   </head>
   <body>
     <div class="hamburger"><a class="hamburger__logo" href="index.html"><img src="img/logo.svg" alt="Logo"></a>
@@ -32,16 +33,13 @@
           <form class="header__search" action="#">
             <div class="header__town"><span>Выберите город</span>
               <div class="header__select">
-                <div class="slct wrap_select">
-                  <input id="radio_header" type="radio" name="town__choice">
-                  <label for="radio_header">Киев</label>
-                  <input class="radio" id="radio_kiyv" type="radio" name="town__choice" checked>
-                  <label class="option" for="radio_kiyv">Киев</label>
-                  <input class="radio" id="radio_Lviv" type="radio" name="town__choice">
-                  <label class="option" for="radio_Lviv">Львов</label>
-                  <input class="radio" id="radio_Odessa" type="radio" name="town__choice">
-                  <label class="option" for="radio_Odessa">Одесса</label>
-                </div>
+                <select class="js-header-slct" name="header__select">
+                  <option value="1">Киев</option>
+                  <option value="2">Львов</option>
+                  <option value="3">Одесса</option>
+                  <option value="4">Кривой рог</option>
+                  <option value="5">Луцк</option>
+                </select>
               </div>
             </div>
             <div class="header__rooms"><span>Кол-во комнат</span>
@@ -73,16 +71,15 @@
               <label for="rooms_offer_office">Офисы</label>
             </div>
             <div class="metro__select">
-              <div class="slct wrap_select">
-                <input id="radio_metro" type="radio" name="metro">
-                <label for="radio_metro"><i class="metro_point metro_red"> </i>Политехнический институт</label>
-                <input class="radio" id="kpi" type="radio" name="metro" checked>
-                <label class="option" for="kpi"><i class="metro_point metro_red"> </i>Политехнический институт</label>
-                <input class="radio" id="kontraktova" type="radio" name="metro">
-                <label class="option" for="kontraktova"><i class="metro_point metro_blue"> </i>Контрактовая площадь</label>
-                <input class="radio" id="zoloti" type="radio" name="metro">
-                <label class="option" for="zoloti"><i class="metro_point metro_green"> </i>Золотые ворота</label>
-              </div>
+              <select class="js-metro-slct" name="metro-slct">
+                <option value="1">Политехнический институт</option>
+                <option value="2">Контрактовая площадь</option>
+                <option value="3">Политехнический институт</option>
+                <option value="4">Золотые ворота</option>
+                <option value="5">Контрактовая площадь</option>
+                <option value="6">Золотые ворота</option>
+                <option value="7">Политехнический институт</option>
+              </select>
             </div>
             <input class="primary_button" type="submit" value="Показать результаты поиска">
           </form>
