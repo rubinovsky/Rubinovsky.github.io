@@ -695,6 +695,12 @@ body {
   .hamburger__icon {
     display: block; } }
 
+@media screen and (max-width: 350px) {
+  body {
+    position: relative; }
+  .hamburger {
+    width: 350px; } }
+
 .js-pseudo-select {
   background-color: #fff;
   z-index: 11;

@@ -2,6 +2,7 @@ $width_1: 890px;
 $width_2: 788px;
 $width_3: 570px;
 $width_4: 483px;
+$width_5: 350px;
 @media screen and (max-width: $width_1) {
 	.board{
 		.board__items{
@@ -165,5 +166,10 @@ $width_4: 483px;
 				margin-top: 25px;
 			}
 		}
+	}
+}
+@media screen and (max-width: $width_5){
+	body{
+		width: 350px;
 	}
 }

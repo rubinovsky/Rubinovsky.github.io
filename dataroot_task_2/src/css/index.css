@@ -799,6 +799,12 @@ body {
   .hamburger__icon {
     display: block; } }
 
+@media screen and (max-width: 350px) {
+  body {
+    position: relative; }
+  .hamburger {
+    width: 350px; } }
+
 .js-pseudo-select {
   background-color: #fff;
   z-index: 11;
@@ -1700,3 +1706,7 @@ body {
           margin-bottom: 20px; }
     .social .social__slider .slider__nav {
       margin-top: 25px; } }
+
+@media screen and (max-width: 350px) {
+  body {
+    width: 350px; } }
