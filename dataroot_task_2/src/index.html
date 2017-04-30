@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
     <script src="js/jquery.select.js"></script>
     <script src="js/jquery.modal.js"></script>
+    <script src="js/jquery.index_slider.js"></script>
     <script src="js/index.js"></script>
   </head>
   <body>
@@ -201,7 +203,7 @@
           <p>Не отвлекайтесь больше на формальности. Получайте моментальные уведомления о новых обьявлениях, общайтесь без ограничений. </p>
           <div class="social__button"><a class="social__link_active" href="#">Поиск недвижимости</a><a href="#">Общение с клиентами</a></div>
         </div>
-        <div class="social__slider">
+        <div class="social__slider js-slider">
           <div class="social__slide"><img class="social__img" src="img/iphone.png" alt="Iphone">
             <div class="social__info">
               <div class="social__logo"><img src="img/telegram__logo.png" alt="Telegram">
@@ -215,12 +217,22 @@
               </ol><a class="social__join primary_button" href="#">Присоединиться в Telegram</a>
             </div>
           </div>
-          <div class="slider__nav">
-            <input id="social__slide_1" type="radio" name="social__slider_nav" checked>
-            <label for="social__slide_1"></label>
-            <input id="social__slide_2" type="radio" name="social__slider_nav">
-            <label for="social__slide_2"></label>
+          <div class="social__slide">
+            <div class="social__info">
+              <div class="social__logo"><img src="img/telegram__logo.png" alt="Telegram">
+                <h4>Lorem</h4>
+              </div>
+              <h5>Lorem ipsum.</h5>
+              <ol>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur.</li>
+              </ol><a class="social__join primary_button" href="#"> Lorem ipsum dolor.</a>
+            </div><img class="social__img" src="img/iphone.png" alt="Iphone">
           </div>
+          <div class="slider__prev"><i></i></div>
+          <div class="slider__next"><i></i></div>
+          <div class="slider__pagination"></div>
         </div>
       </section>
       <section class="blog">

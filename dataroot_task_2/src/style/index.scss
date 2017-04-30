@@ -270,6 +270,8 @@ body{
 		}
 	}
 	&__slider{
+		padding: 0	30px;
+		position: relative;
 		min-height: 627px;
 		text-align: center;
 		.social__slide{
@@ -277,7 +279,7 @@ body{
 			padding-top: 40px;
 			display: flex;
 			align-items: flex-start;
-			justify-content: space-between;
+			justify-content: space-around;
 			.social__img{
 				padding-left: 80px;
 			} 
@@ -334,31 +336,104 @@ body{
 				}
 			}
 		}
-		.slider__nav{
+		.slider__prev{
+			cursor: pointer;
+			width: 30px;
+			height: 60px;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			left: 0px;
+			position: absolute;
+			i{
+				height: 100%;
+				width: 100%;
+				display: block;
+				position: relative;
+				&:after, &:before{
+					transition: .5s;
+					width: 30px;
+					height: 3px;
+					position: absolute;
+					content: '';
+					display: block;
+					background-color: #000;
+				}
+				&:after{
+					top: 19px;
+					transform: rotate(-45deg)
+				}
+				&:before{
+					bottom: 18px;
+					transform: rotate(45deg)
+				}
+			}
+			&:hover{
+				i{
+					&:after, &:before{
+						background-color: #30AE63;
+					}
+				}
+			}
+		}
+		.slider__next{
+			cursor: pointer;
+			width: 30px;
+			height: 60px;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			right: 0px;
+			position: absolute;
+			i{
+				height: 100%;
+				width: 100%;
+				display: block;
+				position: relative;
+				transform: rotate(180deg);
+				&:after, &:before{
+					transition: .5s;
+					width: 30px;
+					height: 3px;
+					position: absolute;
+					content: '';
+					display: block;
+					background-color: #000;
+				}
+				&:after{
+					top: 19px;
+					transform: rotate(-45deg)
+				}
+				&:before{
+					bottom: 18px;
+					transform: rotate(45deg)
+				}
+			}
+			&:hover{
+				i{
+					&:after, &:before{
+						background-color: #30AE63;
+					}
+				}
+			}
+		}
+		.slider__pagination{
 			display: inline-flex;
 			margin: auto;
 			margin-top: 39px;
-			input[type='radio']{
-				position: absolute;
-				z-index: -5;
-				visibility: hidden;
-			}
-			label{
+			span{
 				width: 12px;
 				height: 12px;
 				border-radius: 50%;
 				border: 2px solid #30AE63;
 				background-color: transparent;
 				margin-right: 10px; 
-
-			}
-			label:hover{
 				cursor: pointer;
 			}
-			label:last-child{
+			span:last-child{
 				margin: 0;
 			}
-			input[type='radio']:checked + label{
+			.slider__pagination_active{
 				background-color: #30AE63;
 			}
 		}

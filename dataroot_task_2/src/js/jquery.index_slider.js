@@ -1,5 +1,5 @@
 (function($){
-    $.fn.listingSlider = function(options) {
+    $.fn.indexSlider = function(options) {
         var options = $.extend({
             infinite: true,
             index: 0,
@@ -8,18 +8,18 @@
             autoplay: false,
             pagination: true,
             autoplaySpeed: 5,  // in seconds
-            next: 'js-slider-next',
-            prev: 'js-slider-prev',
+            next: 'slider__next',
+            prev: 'slider__prev',
         }, options);
         var make = function() {
-            var $rentInfobox = $(this).children('.rent__infobox');
-            var $rentOptions = $(this).children('.rent__options');
-            var $slideLength = $rentOptions.length;
+            var $slide = $(this).children('.social__slide');
+            // var rentOptions = $(this).children('.rent__options');
+            var $slideLength = $slide.length;
             if (options.pagination) {
                 for (var i = 0; i < $slideLength; i++) {
-                    $(this).find('.rent__pagination').append('<span></span>');
+                    $(this).find('.slider__pagination').append('<span></span>');
                 }
-                var $pagination = $(this).find('.rent__pagination span');
+                var $pagination = $(this).find('.slider__pagination span');
                 $pagination.eq(0).addClass('slider__pagination_active');
             }
 
@@ -27,22 +27,19 @@
             var $prev = $(this).find('.' + options.prev);
 
             // Початкови умови
-            var $sliderIndex = options.index;
-            $rentInfobox.fadeOut(0);
-            $rentOptions.fadeOut(0);
-            $rentInfobox.eq(0).fadeIn(0);
-            $rentOptions.eq(0).fadeIn(0);
+            var $slider_index = options.index;
+            $slide.fadeOut(0);
+            $slide.eq(0).fadeIn(0);
             // Функція для заміни слайдів
             var changeSlide = function(){
-                $rentInfobox.fadeOut(0);
-                $rentOptions.fadeOut(0);
-                $rentOptions.eq($sliderIndex).fadeIn(500);
-                $rentInfobox.eq($sliderIndex).fadeIn(500);
+                $slide.fadeOut(0);
+                $slide.eq($slider_index).fadeIn(500);
                 if (options.pagination) {
                     $pagination.removeClass('slider__pagination_active');
-                    $pagination.eq($sliderIndex).addClass('slider__pagination_active');
+                    $pagination.eq($slider_index).addClass('slider__pagination_active');
                 }
             }
+            // опція 'Index'
             if (options.index != 0) {
                 changeSlide();
             }
@@ -53,26 +50,25 @@
             if (!options.arrows) {
                 $next.fadeOut(0);
                 $prev.fadeOut(0);
-                $(this).find('.rent__pagination').css('bottom', '5px');
             }
             // Подія навігації "Вперед"
             $(this).find('.' + options.next).click(function(event){
                 event.preventDefault();
-                if ($sliderIndex != $slideLength - 1) {
-                    $sliderIndex++;
+                if ($slider_index != $slideLength - 1) {
+                    $slider_index++;
                     // Видалення кнопки "Вперед" коли увімкений останній слайд
-                    if (options.infinite == false && $sliderIndex == $slideLength - 1) {
+                    if (options.infinite == false && $slider_index == $slideLength - 1) {
                         $next.fadeOut(200);
                     }
                     // Відновлення кнопки "Назад"
-                    else if (options.infinite == false &&  $sliderIndex >= $slideLength - 2) {
+                    else if (options.infinite == false &&  $slider_index >= $slideLength - 2) {
                         $prev.fadeIn(200);
                     }
                 }
                 else{
                     // перестрибуємо на перший слайд коли увімнений останній (опція "infinite")
                     if (options.infinite) {
-                        $sliderIndex = 0;           
+                        $slider_index = 0;           
                     }
                 }
                 changeSlide();
@@ -80,21 +76,21 @@
             });
             // Подія навігації "Назад"
             $(this).find('.' + options.prev).click(function(event){
-                if ($sliderIndex != 0) {
-                    $sliderIndex--;
+                if ($slider_index != 0) {
+                    $slider_index--;
                     // Видалення кнопки "Назад" коли увімкений перший слайд
-                    if (options.infinite == false && $sliderIndex == 0) {
+                    if (options.infinite == false && $slider_index == 0) {
                         $prev.fadeOut(200);
                     }
                     // Відновлення кнопки "Вперед"
-                    else if (options.infinite == false && $sliderIndex > 0) {
+                    else if (options.infinite == false && $slider_index > 0) {
                         $next.fadeIn(200);
                     }
                 }
                 else{
                     // перестрибуємо на останній слайд коли увімнений перший (опція "infinite")
                     if (options.infinite){
-                        $sliderIndex = $slideLength -1;  
+                        $slider_index = $slideLength -1;  
                     }
                 }
                 changeSlide();
@@ -104,18 +100,16 @@
             $pagination.click(function(){
                 $pagination.removeClass('slider__pagination_active');
                 $(this).addClass('slider__pagination_active')
-                $sliderIndex = $pagination.index($('.slider__pagination_active'));
+                $slider_index = $pagination.index($('.slider__pagination_active'));
                 $next.fadeIn(500);
                 $prev.fadeIn(500);
-                $rentInfobox.fadeOut(0);
-                $rentOptions.fadeOut(0);
-                $rentOptions.eq($sliderIndex).fadeIn(500);
-                $rentInfobox.eq($sliderIndex).fadeIn(500);
+                $slide.fadeOut(0);
+                $slide.eq($slider_index).fadeIn(500);
                 if (!options.infinite) {
-                    if($sliderIndex == $slideLength - 1){
+                    if($slider_index == $slideLength - 1){
                         $next.fadeOut(500);
                     }
-                    else if($sliderIndex == 0){
+                    else if($slider_index == 0){
                         $prev.fadeOut(500)
                     }
                 }
@@ -123,15 +117,15 @@
             // Автопрогравання слайдера опція "autoplay" працює тільки при "infinite = true"
             if (options.infinite) {
                 if (options.autoplay) {
-                    var timerId = setInterval(function() { 
+                    var $timerId = setInterval(function() { 
                         $next.click() 
                     }, options.autoplaySpeed * 1000);
                     // Зупинка автопрогравання при наведені на блок
                    $(this).hover(
                       function() {
-                        clearTimeout(timerId)
+                        clearTimeout($timerId)
                       }, function() {
-                            timerId = setInterval(function() { 
+                            $timerId = setInterval(function() { 
                                 $next.click() 
                             }, options.autoplaySpeed * 1000);
                       }

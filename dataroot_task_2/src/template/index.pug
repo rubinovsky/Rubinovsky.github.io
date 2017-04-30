@@ -7,9 +7,11 @@ html
     link(rel='stylesheet', href='css/normalize.css')
     link(rel='stylesheet', href='css/index.css')
     link(href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet")
-    script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+    script(src="js/jquery-1.11.1.min.js")
+    script(src="js/jquery.touchSwipe.min.js")
     script(src='js/jquery.select.js')
     script(src='js/jquery.modal.js')
+    script(src='js/jquery.index_slider.js')
     script(src='js/index.js')
   body
     include _hamburger
@@ -252,7 +254,7 @@ html
           .social__button
             a(href="#" class='social__link_active') Поиск недвижимости
             a(href="#") Общение с клиентами
-        .social__slider
+        div(class='social__slider js-slider')
           .social__slide
             img(class='social__img' src="img/iphone.png", alt="Iphone")
             .social__info
@@ -265,11 +267,23 @@ html
                 li Получайте подсказки по эффективному продвижению объявлений
                 li Общайтесь с клиентами через специальный канал телекоммуникации
               a(class='social__join primary_button' href='#') Присоединиться в Telegram
-          .slider__nav
-            input(id='social__slide_1' type="radio" name='social__slider_nav' checked)
-            label(for="social__slide_1")
-            input(id='social__slide_2' type="radio" name='social__slider_nav')
-            label(for="social__slide_2")
+          .social__slide
+            .social__info
+              .social__logo
+                img(src="img/telegram__logo.png", alt="Telegram")
+                h4 Lorem
+              h5 Lorem ipsum.
+              ol
+                li Lorem ipsum dolor sit.
+                li Lorem ipsum dolor sit amet, consectetur.
+                li Lorem ipsum dolor sit amet, consectetur.
+              a(class='social__join primary_button' href='#')  Lorem ipsum dolor.
+            img(class='social__img' src="img/iphone.png", alt="Iphone")
+          .slider__prev
+            i
+          .slider__next
+            i
+          .slider__pagination
       section(class='blog')
         .blog__header
           h3 Блог Metrovka

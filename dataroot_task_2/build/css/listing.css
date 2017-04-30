@@ -81,7 +81,7 @@ body {
     display: block;
     margin: 0; }
     .overflow__menu a:hover {
-      color: #fff;
+      color: #fff !important;
       background-color: #30AE63; }
   .overflow__menu .overflow__link-danger {
     border-top: 1px solid #D8D8D8; }
