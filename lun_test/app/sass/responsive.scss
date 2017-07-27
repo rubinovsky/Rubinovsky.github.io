@@ -1,0 +1,63 @@
+$width-1: 700px;
+
+
+@media screen and (max-width: $width-1) {
+	.questions{
+	    .name-email{
+	        .input-wrap{
+	            .input-error{
+	                border: 1px solid #ff0000;
+	                margin-bottom: 3px;
+	            }
+	            .valid_error{
+	                position: static;
+	            }
+	        }
+	    } 
+	    .country-cities{
+	        .js-pseudo-select {
+	            i.valid_error{
+	                top: 60px;
+	                left: 0px;
+	            }
+	        }
+	        .select-open {
+	        	i.valid_error{
+	        		display: none; 
+	        	}
+	        }
+	    }
+	    .social-network{
+	        .sn-wrap{
+	            input[type ='text']{
+	            	width: 170px;
+	            	padding: 10px 5px;
+	            }
+	            .valid_error{
+	            	left: 175px;
+	            }
+	        }
+	    } 
+	    .animals{
+	        .wrap-photo{
+	        	width: 328px;
+	            flex-wrap: wrap;
+	            display: flex;
+	            justify-content: space-between;
+	            img{
+	            	margin: 0 0 16px 0;
+	            } 
+	            .active-animal{
+	                border: 3px solid #ff9800;
+	            }
+	        }
+	    }
+	    .portfolio{
+	        padding: 24px;
+	        flex-direction: column;
+	        .portfolio-info{
+	            margin-right: 0;
+		    }
+		}
+	} 
+}

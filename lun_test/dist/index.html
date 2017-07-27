@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ЛУН - анкета</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<script src='js/libs.min.js'></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/jquery.select.js"></script>
+	<script src='js/common.js'></script>
+</head>
+<body>
+	<section>
+		<div class="questions">
+			<div class="pagination"></div>
+			<form action="#" id="portfolio_form">
+				<div class="question name-email">
+					<h3>1. Введите имя и e-mail</h3>
+					<div class="input-wrap">
+						<input type="text" name="name" class="question__name"    placeholder="Имя">
+					</div>
+					<div class="input-wrap">
+						<input type="email" name="email" class="question__email" placeholder="Email">
+					</div>
+				</div>
+				<div class="question country-cities">
+					<h3>2. Введите страну и город</h3>
+					<select name="country" id="country">
+					</select>
+					<select name="cities" id="cities">
+					</select>
+				</div>
+				<div class="question social-network">
+					<h3>3. Отметьте социальные сети</h3>
+					<div class="sn-wrap">
+						<input type="checkbox" id="check_fb">
+						<label for="check_fb">Facebook</label>
+						<input type="text" name="input_fb" placeholder="Страница в Facebook">
+					</div>
+					<div class="sn-wrap">
+						<input type="checkbox" id="check_vk">
+						<label for="check_vk">Вконтакте</label>
+						<input type="text" name="input_vk" placeholder="Страница в Вконтакте">
+					</div>
+					<div class="sn-wrap">
+						<input type="checkbox" id="check_tw">
+						<label for="check_tw">Twitter</label>
+						<input type="text" name="input_tw" placeholder="Ваша страница в Twitter">
+					</div>
+					<div class="sn-wrap">
+						<input type="checkbox" id="check_odn">
+						<label for="check_odn">Одноклассники</label>
+						<input type="text" name="input_odn" placeholder="Одноклассники">
+					</div>
+				</div>
+				<div class="question animals">
+					<h3>4. Выберите любимого котика</h3>
+					<div class="wrap-photo">
+						<img class="cat" src="img/cat1.jpg"  alt="Котик 1">
+						<img class="cat" src="img/cat2.jpg"  alt="Котик 2">
+						<img class="cat" src="img/cat3.jpg"  alt="Котик 3">
+						<img class="dog" src="img/dog4.jpg"  alt="Собачка">
+					</div>
+				</div>
+				<div class="portfolio">
+				</div>
+			</form>
+			<div class="nav">
+				<span class="nav__prev">Превыдущий</span>
+				<span class="nav__next">Следующий</span>
+		</div>
+		</div>
+	</section>
+</body>
+</html>
