@@ -1526,6 +1526,23 @@
 @media screen and (max-width: 768px) {
   .body-wrap, .header {
     width: 100%; }
+  .header__search__form {
+    top: -120px;
+    padding: 0; }
+    .header__search__form form {
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      .header__search__form form .header__search__inputbox {
+        border-bottom: 2px solid #6ac052;
+        text-align: center;
+        width: 100%; }
+      .header__search__form form .header__search__btn-submit, .header__search__form form .header__search__btn-close {
+        height: 50px;
+        background-color: #fff;
+        width: 50%; }
+  .header__search__form-active {
+    top: 0; }
   .slide_up {
     right: 15px;
     margin: 0;
