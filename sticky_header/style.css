@@ -1,0 +1,29 @@
+body{
+	font-family: 'Barlow', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.header{
+	padding: 10px 0;
+	font-family: 'Bungee', cursive;
+    position: -webkit-sticky;
+    position: sticky; 
+    top: 0;
+	color: #C92D8D;
+	background: #F99747;
+}
+.header h1{
+	font-size: 30px;	
+	line-height: 30px;
+	margin: 0;
+	text-align: center;
+}
+section{
+	background: #C92D8D;
+}
+.first_board{
+	height: 50px;
+}
+.last_board{
+	height: 1000px;
+}
