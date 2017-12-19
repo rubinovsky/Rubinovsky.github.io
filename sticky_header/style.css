@@ -1,16 +1,29 @@
 body{
-	font-family: 'Barlow', sans-serif;
 	margin: 0;
 	padding: 0;
+	font-family: 'Bungee', cursive;
 }
 header{
 	padding: 10px 0;
-	font-family: 'Bungee', cursive;
     position: -webkit-sticky;
     position: sticky; 
     top: 0;
 	color: #C92D8D;
 	background: #F99747;
+}
+.pseudo_header{
+	display: block;
+	background: #F99747;	
+}
+.pseudo_header-hidden{
+	display: none;
+}
+.sticky{
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	position: fixed;
 }
 header h1{
 	font-size: 30px;	
@@ -19,7 +32,9 @@ header h1{
 	text-align: center;
 }
 section{
+	color: #F99747;
 	background: #C92D8D;
+	text-align: center;
 }
 .first_board{
 	height: 50px;
@@ -28,6 +43,8 @@ section{
 	height: 900px;
 }
 footer{
+	text-align: center;
+	color: #C92D8D;
 	height: 100px;
 	background: #F99747;
 }
