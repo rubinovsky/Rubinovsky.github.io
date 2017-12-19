@@ -16,6 +16,11 @@ header{
 	display: none;
 }
 .sticky{
+	position: -webkit-sticky;
+    position: sticky; 
+    top: 0;
+}
+.js_sticky{
 	top: 0;
 	right: 0;
 	left: 0;
