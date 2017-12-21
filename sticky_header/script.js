@@ -30,9 +30,9 @@ $(document).ready(function(){
 		})
 		windowScroll.bind('touchstart', function(){
 			var text = $('.main_board').text();
-			$('.main_board').text(text + 'start     ');
+			$('.main_board').text('start     ');
 			var timerId = setInterval(function() {
-				$('.main_board').text(text + 'swipe     ');
+				$('.main_board').text('swipe     ');
 				if (windowScroll.scrollTop() >= offesHeader && !header.hasClass('js_sticky')) {
 					header.addClass('js_sticky');
 					pseudo_header.removeClass('pseudo_header-hidden');
@@ -45,7 +45,7 @@ $(document).ready(function(){
 		});
 		windowScroll.bind('touchend', function(){
 			var text = $('.main_board').text();
-			$('.main_board').text(text + 'end     ');
+			$('.main_board').text('end     ');
 			clearTimeout(timerId);
 		});
 	}
