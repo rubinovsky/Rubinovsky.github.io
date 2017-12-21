@@ -29,6 +29,7 @@ $(document).ready(function(){
 		// 	}
 		// })
 		windowScroll.bind('touchmove', function(){
+			$('.main_board').text(windowScroll.scrollTop());
 			if (windowScroll.scrollTop() >= offesHeader && !header.hasClass('js_sticky')) {
 				header.addClass('js_sticky');
 				pseudo_header.removeClass('pseudo_header-hidden');
