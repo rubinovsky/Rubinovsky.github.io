@@ -31,7 +31,7 @@ $(document).ready(function(){
 		}
 
 		windowScroll.scroll(scrollEvent())
-		windowScroll.bind('touchmove', scrollEvent());
+		// windowScroll.bind('touchmove', scrollEvent());
 	}
 });
 // ******** КІНЕЦЬ Sticky Header
