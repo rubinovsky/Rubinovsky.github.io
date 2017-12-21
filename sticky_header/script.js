@@ -41,7 +41,7 @@ $(document).ready(function(){
 					header.removeClass('js_sticky');
 					pseudo_header.addClass('pseudo_header-hidden');
 				}				
-			}, 20);
+			}, 200);
 		});
 		windowScroll.bind('touchend', function(){
 			var text = $('.main_board').text();
