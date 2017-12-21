@@ -29,6 +29,7 @@ $(document).ready(function(){
 			}
 		})
 		windowScroll.bind('touchstart', function(){
+			$('.main_board').text('start     ')
 			var timerId = setInterval(function() {
 				if (windowScroll.scrollTop() >= offesHeader && !header.hasClass('js_sticky')) {
 					header.addClass('js_sticky');
@@ -41,6 +42,7 @@ $(document).ready(function(){
 			}, 20);
 		});
 		windowScroll.bind('touchend', function(){
+			$('.main_board').text('end     ')
 			clearTimeout(timerId);
 		});
 	}
