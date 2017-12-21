@@ -18,18 +18,7 @@ $(document).ready(function(){
 	    var pseudo_header = $('.pseudo_header');
 	    pseudo_header.css('height', header.outerHeight());
 
-		// windowScroll.scroll(function(){
-		// 	if (windowScroll.scrollTop() >= offesHeader && !header.hasClass('js_sticky')) {
-		// 		header.addClass('js_sticky');
-		// 		pseudo_header.removeClass('pseudo_header-hidden');
-		// 	}
-		// 	else if(windowScroll.scrollTop() < offesHeader){
-		// 		header.removeClass('js_sticky');
-		// 		pseudo_header.addClass('pseudo_header-hidden');
-		// 	}
-		// })
-		windowScroll.bind('touchmove', function(){
-			$('.main_board').text(windowScroll.scrollTop());
+		windowScroll.scroll(function(){
 			if (windowScroll.scrollTop() >= offesHeader && !header.hasClass('js_sticky')) {
 				header.addClass('js_sticky');
 				pseudo_header.removeClass('pseudo_header-hidden');
@@ -38,6 +27,21 @@ $(document).ready(function(){
 				header.removeClass('js_sticky');
 				pseudo_header.addClass('pseudo_header-hidden');
 			}
+		})
+		windowScroll.bind('touchstart', function(){
+			var timerId = setInterval(function() {
+				if (windowScroll.scrollTop() >= offesHeader && !header.hasClass('js_sticky')) {
+					header.addClass('js_sticky');
+					pseudo_header.removeClass('pseudo_header-hidden');
+				}
+				else if(windowScroll.scrollTop() < offesHeader){
+					header.removeClass('js_sticky');
+					pseudo_header.addClass('pseudo_header-hidden');
+				}				
+			}, 20);
+		});
+		windowScroll.bind('touchend', function(){
+			clearTimeout(timerId);
 		});
 	}
 });
