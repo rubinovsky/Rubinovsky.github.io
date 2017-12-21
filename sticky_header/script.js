@@ -18,8 +18,8 @@ $(document).ready(function(){
 	    var pseudo_header = $('.pseudo_header');
 	    pseudo_header.css('height', header.outerHeight());
 	    
-	    // Функція зміни класів в header
-		function scrollEvent(){
+
+		windowScroll.scroll(function(){
 			if (windowScroll.scrollTop() >= offesHeader && !header.hasClass('js_sticky')) {
 				header.addClass('js_sticky');
 				pseudo_header.removeClass('pseudo_header-hidden');
@@ -28,10 +28,17 @@ $(document).ready(function(){
 				header.removeClass('js_sticky');
 				pseudo_header.addClass('pseudo_header-hidden');
 			}
-		}
-
-		windowScroll.scroll(scrollEvent())
-		// windowScroll.bind('touchmove', scrollEvent());
+		})
+		windowScroll.bind('touchmove', function(){
+			if (windowScroll.scrollTop() >= offesHeader && !header.hasClass('js_sticky')) {
+				header.addClass('js_sticky');
+				pseudo_header.removeClass('pseudo_header-hidden');
+			}
+			else if(windowScroll.scrollTop() < offesHeader){
+				header.removeClass('js_sticky');
+				pseudo_header.addClass('pseudo_header-hidden');
+			}
+		});
 	}
 });
 // ******** КІНЕЦЬ Sticky Header
