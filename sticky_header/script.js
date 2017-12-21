@@ -17,7 +17,9 @@ $(document).ready(function(){
 	    header.after("<div class='pseudo_header pseudo_header-hidden'></div>");
 	    var pseudo_header = $('.pseudo_header');
 	    pseudo_header.css('height', header.outerHeight());
-		windowScroll.scroll(function() {
+	    
+	    // Функція зміни класів в header
+		function scrollEvent(){
 			if (windowScroll.scrollTop() >= offesHeader && !header.hasClass('js_sticky')) {
 				header.addClass('js_sticky');
 				pseudo_header.removeClass('pseudo_header-hidden');
@@ -26,7 +28,10 @@ $(document).ready(function(){
 				header.removeClass('js_sticky');
 				pseudo_header.addClass('pseudo_header-hidden');
 			}
-		})
+		}
+
+		windowScroll.scroll(scrollEvent())
+		windowScroll.on("touchmove", scrollEvent());
 	}
 });
 // ******** КІНЕЦЬ Sticky Header
