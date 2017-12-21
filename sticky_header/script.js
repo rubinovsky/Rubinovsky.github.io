@@ -17,7 +17,6 @@ $(document).ready(function(){
 	    header.after("<div class='pseudo_header pseudo_header-hidden'></div>");
 	    var pseudo_header = $('.pseudo_header');
 	    pseudo_header.css('height', header.outerHeight());
-	    
 
 		windowScroll.scroll(function(){
 			if (windowScroll.scrollTop() >= offesHeader && !header.hasClass('js_sticky')) {
@@ -30,15 +29,11 @@ $(document).ready(function(){
 			}
 		})
 		windowScroll.bind('touchmove', function(){
-			if (windowScroll.scrollTop() >= offesHeader && !header.hasClass('js_sticky')) {
-				header.addClass('js_sticky');
-				pseudo_header.removeClass('pseudo_header-hidden');
-			}
-			else if(windowScroll.scrollTop() < offesHeader){
-				header.removeClass('js_sticky');
-				pseudo_header.addClass('pseudo_header-hidden');
-			}
+			$('.main_board').after("Don't default browser")
 		});
 	}
+});
+$(window).bind('touchmove', function(){
+	$('.main_board').after("Main")
 });
 // ******** КІНЕЦЬ Sticky Header
