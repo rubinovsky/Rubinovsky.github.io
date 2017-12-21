@@ -28,26 +28,6 @@ $(document).ready(function(){
 				pseudo_header.addClass('pseudo_header-hidden');
 			}
 		})
-		windowScroll.bind('touchstart', function(){
-			var text = $('.main_board').text();
-			$('.main_board').text('start     ');
-			var timerId = setInterval(function() {
-				$('.main_board').text('swipe     ');
-				if (windowScroll.scrollTop() >= offesHeader && !header.hasClass('js_sticky')) {
-					header.addClass('js_sticky');
-					pseudo_header.removeClass('pseudo_header-hidden');
-				}
-				else if(windowScroll.scrollTop() < offesHeader){
-					header.removeClass('js_sticky');
-					pseudo_header.addClass('pseudo_header-hidden');
-				}				
-			}, 200);
-		});
-		windowScroll.bind('touchend', function(){
-			var text = $('.main_board').text();
-			$('.main_board').text('end     ');
-			clearTimeout(timerId);
-		});
 	}
 });
 // ******** КІНЕЦЬ Sticky Header
