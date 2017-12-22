@@ -4,7 +4,7 @@ $(document).ready(function(){
 	var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
 	var is_safari = navigator.userAgent.indexOf("Safari") > -1;
 
-	var header = $('header');
+	var header = $('.header').eq(0);
 
 	// Для Google Chrome, Safari та Firefox застосовуємо css стиль
 	if (is_chrome || is_firefox || is_safari) {
@@ -18,7 +18,8 @@ $(document).ready(function(){
 	    var pseudo_header = $('.pseudo_header');
 	    pseudo_header.css('height', header.outerHeight());
 
-		windowScroll.scroll(function(){
+	    // Функція зміни header
+	    function changeHeader(){
 			if (windowScroll.scrollTop() >= offesHeader && !header.hasClass('js_sticky')) {
 				header.addClass('js_sticky');
 				pseudo_header.removeClass('pseudo_header-hidden');
@@ -27,7 +28,21 @@ $(document).ready(function(){
 				header.removeClass('js_sticky');
 				pseudo_header.addClass('pseudo_header-hidden');
 			}
+	    }
+	    // Зміна при scroll
+		windowScroll.scroll(function(){
+			changeHeader();
 		})
+	    // Зміна при swipe
+		var timeID;
+		windowScroll.bind('touchstart',function(e){
+	        e.preventDefault();
+	        timeID = setInterval(changeHeader, 20)
+		});
+		windowScroll.bind('touchend',function(e){
+	        e.preventDefault();
+	        clearTimeout(timeID);
+		});
 	}
 });
 // ******** КІНЕЦЬ Sticky Header
