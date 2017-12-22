@@ -20,6 +20,7 @@ $(document).ready(function(){
 
 	    // Функція зміни header
 	    function changeHeader(){
+			header.text(windowScroll.scrollTop());
 			if (windowScroll.scrollTop() >= offesHeader && !header.hasClass('js_sticky')) {
 				header.addClass('js_sticky');
 				pseudo_header.removeClass('pseudo_header-hidden');
@@ -36,7 +37,6 @@ $(document).ready(function(){
 	    // Зміна при swipe
 		var timeID;
 		windowScroll.bind('touchstart',function(e){
-			header.text(windowScroll.scrollTop());
 	        timeID = setInterval(changeHeader, 20)
 		});
 		windowScroll.bind('touchend',function(e){
