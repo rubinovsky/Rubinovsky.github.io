@@ -36,6 +36,7 @@ $(document).ready(function(){
 	    // Зміна при swipe
 		var timeID;
 		windowScroll.bind('touchstart',function(e){
+			header.text(windowScroll.scrollTop());
 	        timeID = setInterval(changeHeader, 20)
 		});
 		windowScroll.bind('touchend',function(e){
