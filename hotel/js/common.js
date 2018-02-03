@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	$('.site_wrap').css('height', $(window).height()+'px');
-	
+
 	var choiceLang = $('.lang_active');
 	var listLang = $('.all_lang');
 	choiceLang.click(function(){
@@ -17,4 +17,8 @@ $(document).ready(function(){
 			listLang.fadeOut(500);
 		}
 	})
+	$('#background-video').YTPlayer({
+	  fitToBackground: true, // use as a background video
+	  videoId: 'DfrGlSQGATA'
+	});
 })
