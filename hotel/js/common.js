@@ -1,9 +1,16 @@
 $(document).ready(function(){
+	var windH = $(window).height();
+	var bgVideo = $('.video-background video');
+	
+	if (windH > bgVideo.height() + 100) {
+		bgVideo.addClass('height_100');
+	}
 
-	$('.site_wrap').css('height', $(window).height()+'px');
+	$('.site_wrap').css('height', windH + 'px');
 
 	var choiceLang = $('.lang_active');
 	var listLang = $('.all_lang');
+
 	choiceLang.click(function(){
 		if (listLang.is(':visible')) {
 			listLang.fadeOut(500);
@@ -17,8 +24,4 @@ $(document).ready(function(){
 			listLang.fadeOut(500);
 		}
 	})
-	$('#background-video').YTPlayer({
-	  fitToBackground: true, // use as a background video
-	  videoId: 'DfrGlSQGATA'
-	});
 })
