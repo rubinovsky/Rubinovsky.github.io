@@ -105,12 +105,16 @@ body * {
           color: #ffc107;
           margin-right: 7px;
           font-size: 18px; }
+        .site_wrap .main_board__buttons .contacts_btn span {
+          color: #fff; }
         .site_wrap .main_board__buttons .contacts_btn:hover {
           background-color: #fff;
           border: 3px solid #fff;
           color: #000; }
           .site_wrap .main_board__buttons .contacts_btn:hover i {
             color: #000; }
+          .site_wrap .main_board__buttons .contacts_btn:hover span {
+            color: 000; }
   .site_wrap .footer {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -880,6 +884,7 @@ body * {
       height: 100%;
       background-color: rgba(0, 66, 117, 0.61); }
   .video-background {
+    position: absolute;
     background: #000 no-repeat;
     height: 100%;
     bottom: 0;
@@ -959,6 +964,10 @@ body * {
           margin-right: 0;
           margin-bottom: 15px;
           padding: 0 40px; }
+        .site_wrap .main_board__buttons .contacts_btn i {
+          margin-left: auto; }
+        .site_wrap .main_board__buttons .contacts_btn span {
+          margin-right: auto; }
     .site_wrap .footer__nav {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
