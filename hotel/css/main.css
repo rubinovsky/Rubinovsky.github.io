@@ -111,10 +111,12 @@ body * {
           background-color: #fff;
           border: 3px solid #fff;
           color: #000; }
+          .site_wrap .main_board__buttons .contacts_btn:hover span{
+          color: #000; }
           .site_wrap .main_board__buttons .contacts_btn:hover i {
             color: #000; }
           .site_wrap .main_board__buttons .contacts_btn:hover span {
-            color: 000; }
+            color: #000; }
   .site_wrap .footer {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -814,8 +816,12 @@ body * {
             background-color: #fff;
             border: 3px solid #fff;
             color: #000; }
+          .site_wrap .main_board__buttons .contacts_btn:hover span{
+            color: #000;
+          }
             .site_wrap .main_board__buttons .contacts_btn:hover i {
               color: #000; }
+          }
     .site_wrap .footer {
       background-color: rgba(0, 66, 117, 0.61);
       font-family: 'Proxima Nova', Georgia, sans-serif;
