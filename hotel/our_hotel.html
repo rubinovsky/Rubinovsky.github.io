@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Hotel | UNSER HOSTAL</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/main.css">
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
@@ -10,23 +11,25 @@
 <body class="our_hotel">
 	<article class="our_hotel_wrap">
 		<header class="header">
-			<a href="#" class="header__logo">
+			<a href="/hotel/" class="header__logo">
 				<img src="img/logo.png" alt="Hostal Orci">
 			</a>
-			<nav class="header__nav">
-				<a href="/hotel/" class="nav-item"><i class="fas fa-home"></i><span>WILLKOMMEN</span></a>
-				<a href="#" class="nav-item"><span>ÜBER UNS</span></a>
-				<a href="/hotel/our_hotel.html" class="nav-item active"><span>UNSERE HIGHLIGHTS</span></a>
-				<a href="#" class="nav-item"><span>BILDERGALERIE</span></a>
-				<a href="#" class="nav-item"><span>UNSERE KONTAKTDETAILS</span></a>
-				<a href="#" class="nav-item"><span>BEWERTUNGEN</span></a>
-			</nav>
-			<div class="header__lang">
-				<a href="#" class="lang_active"><img src="img/icon_deu.png" alt="Deutsch"><span>Select Language</span><i class="fas fa-angle-down"></i></a>
-				<div class="all_lang">
-					<a href="#"><img src="img/icon_deu.png" alt="Deutsch">Deutsch</a>
-					<a href="#"><img src="img/icon_deu.png" alt="Deutsch">Deutsch</a>
-					<a href="#"><img src="img/icon_deu.png" alt="Deutsch">Deutsch</a>
+			<span id="menu_btn"><i></i></span>
+			<div class="menu_wrap">
+				<nav class="header__nav">
+					<a href="/hotel/" class="nav-item"><i class="fas fa-home"></i><span>WILLKOMMEN</span></a>
+					<a href="#" class="nav-item"><span>ÜBER UNS</span></a>
+					<a href="/hotel/our_hotel.html" class="nav-item active"><span>UNSERE HIGHLIGHTS</span></a>
+					<a href="#" class="nav-item"><span>BILDERGALERIE</span></a>
+					<a href="#" class="nav-item"><span>UNSERE KONTAKTDETAILS</span></a>
+					<a href="#" class="nav-item"><span>BEWERTUNGEN</span></a>
+				</nav>
+				<div class="header__lang">
+					<a href="#" class="lang_active"><img src="img/icon_deu.png" alt="Deutsch"><span>Select Language</span><i class="fas fa-angle-down"></i></a>
+					<div class="all_lang">
+						<a href="#"><img src="img/icon_deu.png" alt="Deutsch">Deutsch</a>
+						<a href="#"><img src="img/icon_deu.png" alt="Deutsch">Deutsch</a>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -86,6 +89,7 @@ Fahrräder auf abschließbarem Hof abstellbar</span>
 	</section>
 	<footer class="footer">
 		<span class="copy">Copyright &copy; 2018</span>
+		<a href="http://young-developers.zzz.com.ua/" target="_blank" class="YD">Realised Young-Developers </a>
 	</footer>
 <!-- 	<div class="video-background">
 	    <video autoplay="true" loop="true" muted class="fillWidth fadeIn animated" id="video-background">

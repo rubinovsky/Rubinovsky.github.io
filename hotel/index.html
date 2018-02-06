@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Hotel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/main.css">
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
@@ -10,23 +11,25 @@
 <body>
 	<article class="site_wrap">
 		<header class="header">
-			<a href="#" class="header__logo">
+			<a href="/hotel/" class="header__logo">
 				<img src="img/logo.png" alt="Hostal Orci">
 			</a>
-			<nav class="header__nav">
-				<a href="/hotel/" class="nav-item active"><i class="fas fa-home"></i><span>WILLKOMMEN</span></a>
-				<a href="#" class="nav-item"><span>ÜBER UNS</span></a>
-				<a href="/hotel/our_hotel.html" class="nav-item"><span>UNSERE HIGHLIGHTS</span></a>
-				<a href="#" class="nav-item"><span>BILDERGALERIE</span></a>
-				<a href="#" class="nav-item"><span>UNSERE KONTAKTDETAILS</span></a>
-				<a href="#" class="nav-item"><span>BEWERTUNGEN</span></a>
-			</nav>
-			<div class="header__lang">
-				<a href="#" class="lang_active"><img src="img/icon_deu.png" alt="Deutsch"><span>Select Language</span><i class="fas fa-angle-down"></i></a>
-				<div class="all_lang">
-					<a href="#"><img src="img/icon_deu.png" alt="Deutsch">Deutsch</a>
-					<a href="#"><img src="img/icon_deu.png" alt="Deutsch">Deutsch</a>
-					<a href="#"><img src="img/icon_deu.png" alt="Deutsch">Deutsch</a>
+			<span id="menu_btn"><i></i></span>
+			<div class="menu_wrap">
+				<nav class="header__nav">
+					<a href="/hotel/" class="nav-item active"><i class="fas fa-home"></i><span>WILLKOMMEN</span></a>
+					<a href="#" class="nav-item"><span>ÜBER UNS</span></a>
+					<a href="/hotel/our_hotel.html" class="nav-item"><span>UNSERE HIGHLIGHTS</span></a>
+					<a href="#" class="nav-item"><span>BILDERGALERIE</span></a>
+					<a href="#" class="nav-item"><span>UNSERE KONTAKTDETAILS</span></a>
+					<a href="#" class="nav-item"><span>BEWERTUNGEN</span></a>
+				</nav>
+				<div class="header__lang">
+					<a href="#" class="lang_active"><img src="img/icon_deu.png" alt="Deutsch"><span>Select Language</span><i class="fas fa-angle-down"></i></a>
+					<div class="all_lang">
+						<a href="#"><img src="img/icon_deu.png" alt="Deutsch">Deutsch</a>
+						<a href="#"><img src="img/icon_deu.png" alt="Deutsch">Deutsch</a>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -40,10 +43,10 @@
 		</section>
 		<footer class="footer">
 			<div class="footer__nav">
-				<a href="#"><i class="fas fa-shopping-cart"></i>BEWERTUNGEN</a>
-				<a href="#"><img src="img/icon-coctail.png" alt="COCTAILS MENU">COCTAILS MENU</a>
-				<a href="#"><i class="fas fa-coffee"></i>FRÜHSTÜCK JEDERZEIT, SOGAR UM 13.00</a>
-				<a href="#"><i class="fas fa-wifi"></i>FREE WI-FI ALL ROOM</a>
+				<span><i class="fas fa-shopping-cart"></i>BEWERTUNGEN</span>
+				<span><img src="img/icon-coctail.png" alt="COCTAILS MENU">COCTAILS MENU</span>
+				<span><i class="fas fa-coffee"></i>FRÜHSTÜCK JEDERZEIT, SOGAR UM 13.00</span>
+				<span><i class="fas fa-wifi"></i>FREE WI-FI ALL ROOM</span>
 			</div>
 		</footer>
 		<div class="video-background">
