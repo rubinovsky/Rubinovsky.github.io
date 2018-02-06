@@ -371,7 +371,27 @@ body * {
       height: 100%;
       width: auto; }
 
-.our_hotel_wrap {
+.main_board {
+  margin: auto;
+  padding: 0 30px;
+  position: relative;
+  z-index: 2; }
+  .main_board h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 38px;
+    text-transform: uppercase;
+    margin: 0 0 15px 0; }
+  .main_board h2 {
+    text-align: center;
+    color: #ffc107;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0 0 35px 0; }
+
+.our_hotel_wrap, .section_wrap {
   height: 588px;
   background-image: url("../img/bg-2.png");
   position: relative;
@@ -384,26 +404,7 @@ body * {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .our_hotel_wrap .main_board {
-    margin: auto;
-    padding: 0 30px;
-    position: relative;
-    z-index: 2; }
-    .our_hotel_wrap .main_board h1 {
-      text-align: center;
-      color: #fff;
-      font-weight: 700;
-      font-size: 38px;
-      text-transform: uppercase;
-      margin: 0 0 15px 0; }
-    .our_hotel_wrap .main_board h2 {
-      text-align: center;
-      color: #ffc107;
-      font-weight: 600;
-      font-size: 20px;
-      text-transform: uppercase;
-      margin: 0 0 35px 0; }
-  .our_hotel_wrap:after {
+  .our_hotel_wrap:after, .section_wrap:after {
     z-index: 1;
     top: 0;
     left: 0;
@@ -541,7 +542,7 @@ body * {
   width: 100%;
   height: 633px; }
 
-.our_hotel footer.footer {
+footer.footer_default {
   position: relative;
   font-family: 'Proxima Nova', Georgia, sans-serif;
   height: 36px;
@@ -554,12 +555,12 @@ body * {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ffc107; }
-  .our_hotel footer.footer .copy {
+  footer.footer_default .copy {
     font-size: 18px;
     font-weight: 500;
     display: inline-block;
     margin: auto; }
-  .our_hotel footer.footer a {
+  footer.footer_default a {
     -webkit-transition: .5s;
     transition: .5s;
     height: 100%;
@@ -577,7 +578,7 @@ body * {
     right: 0px;
     color: #000;
     bottom: 0; }
-    .our_hotel footer.footer a:hover {
+    footer.footer_default a:hover {
       background-color: #000;
       color: #fff; }
 
@@ -792,7 +793,11 @@ body * {
         color: #000;
         font-size: 16px;
         width: 50%;
-        height: 45px; }
+        height: 45px;
+        -webkit-border-radius: 0;
+                border-radius: 0;
+        outline: none;
+        background-color: #ffc107; }
   .contant-us_board .contant_img-abs {
     top: 0;
     bottom: 0;
@@ -1249,6 +1254,13 @@ body * {
           font-size: 9px; } }
 
 @media screen and (max-width: 600px) {
+  .contact_us .section_wrap .main_board {
+    padding-right: 10px;
+    padding-left: 10px; }
+    .contact_us .section_wrap .main_board h1 {
+      font-size: 34px; }
+    .contact_us .section_wrap .main_board h2 {
+      font-size: 18px; }
   .header {
     height: 50px;
     padding: 0 20px; }
@@ -1342,19 +1354,21 @@ body * {
         width: 100%; }
   .our_hotel .map {
     height: 270px; }
-  .our_hotel footer.footer {
+  footer.footer_default {
     height: auto;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
     padding: 10px; }
-    .our_hotel footer.footer .copy {
+    footer.footer_default .copy {
       width: 100%;
       text-align: center; }
-    .our_hotel footer.footer a {
+    footer.footer_default a {
       position: static;
       margin: auto;
       margin-top: 10px; }
+  .section_wrap {
+    height: 450px; }
   .our_hotel_wrap {
     height: 450px; }
   .contant-us_board .contant-us {
