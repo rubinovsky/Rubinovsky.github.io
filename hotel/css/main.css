@@ -30,6 +30,10 @@ body * {
   font-family: 'Proxima Nova', Georgia, sans-serif;
   font-weight: 600; }
 
+body input, body textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0; }
+
 .site_wrap {
   position: relative;
   display: -webkit-box;
@@ -743,6 +747,7 @@ footer.footer_default {
                   align-items: center;
           left: 5px; }
       .contant-us_board .contant-us__form input {
+        font-family: 'Proxima Nova', Georgia, sans-serif;
         position: relative;
         color: #aaaaaa;
         -webkit-box-sizing: border-box;
