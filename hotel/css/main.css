@@ -111,8 +111,6 @@ body * {
           background-color: #fff;
           border: 3px solid #fff;
           color: #000; }
-          .site_wrap .main_board__buttons .contacts_btn:hover span{
-          color: #000; }
           .site_wrap .main_board__buttons .contacts_btn:hover i {
             color: #000; }
           .site_wrap .main_board__buttons .contacts_btn:hover span {
@@ -360,10 +358,10 @@ body * {
   background: #000;
   position: fixed;
   top: 0;
-  height: 100%;
   left: 0;
   width: 100%;
-  z-index: -99; }
+  z-index: -99;
+  height: 100%; }
   .video-background video {
     top: 0;
     left: 0;
@@ -583,6 +581,259 @@ body * {
       background-color: #000;
       color: #fff; }
 
+.contant-us_board {
+  position: relative; }
+  .contant-us_board .contant-us {
+    padding: 45px 40px 40px 40px;
+    max-width: 1005px;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .contant-us_board .contant-us__info {
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      width: 50%; }
+      .contant-us_board .contant-us__info h2 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 25px; }
+      .contant-us_board .contant-us__info > span {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 400;
+        display: inline-block;
+        margin-bottom: 25px; }
+      .contant-us_board .contant-us__info .contant-us__email {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 50%; }
+        .contant-us_board .contant-us__info .contant-us__email i {
+          font-size: 34px;
+          color: #ffc107;
+          margin-right: 10px; }
+        .contant-us_board .contant-us__info .contant-us__email h5 {
+          margin: 0;
+          font-size: 14px;
+          text-transform: uppercase;
+          font-weight: 400; }
+        .contant-us_board .contant-us__info .contant-us__email a {
+          color: #ffc107;
+          width: 100%;
+          margin-top: 10px;
+          color: #000;
+          text-decoration: none;
+          display: block;
+          font-size: 14px;
+          font-weight: 300;
+          -webkit-transition: .5s;
+          transition: .5s; }
+          .contant-us_board .contant-us__info .contant-us__email a:hover {
+            color: #ffc107; }
+      .contant-us_board .contant-us__info .contant-us__phone {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 50%; }
+        .contant-us_board .contant-us__info .contant-us__phone i {
+          font-size: 34px;
+          color: #ffc107;
+          margin-right: 10px; }
+        .contant-us_board .contant-us__info .contant-us__phone h5 {
+          margin: 0;
+          font-size: 14px;
+          text-transform: uppercase;
+          font-weight: 400; }
+        .contant-us_board .contant-us__info .contant-us__phone a {
+          width: 100%;
+          margin-top: 10px;
+          color: #000;
+          text-decoration: none;
+          display: block;
+          font-size: 14px;
+          font-weight: 300;
+          -webkit-transition: .5s;
+          transition: .5s; }
+          .contant-us_board .contant-us__info .contant-us__phone a:hover {
+            color: #ffc107; }
+          .contant-us_board .contant-us__info .contant-us__phone a:last-child {
+            margin-top: 2px; }
+      .contant-us_board .contant-us__info .contant-us__locat {
+        margin-top: 10px;
+        text-decoration: none;
+        width: 100%; }
+        .contant-us_board .contant-us__info .contant-us__locat i {
+          font-size: 34px;
+          color: #ffc107;
+          margin-right: 10px; }
+        .contant-us_board .contant-us__info .contant-us__locat span {
+          -webkit-transition: .5s;
+          transition: .5s;
+          color: #000;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 300;
+          color: #000; }
+        .contant-us_board .contant-us__info .contant-us__locat:hover span {
+          color: #ffc107; }
+    .contant-us_board .contant-us__form {
+      width: 50%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .contant-us_board .contant-us__form div {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        background-color: #f4f4f4;
+        height: 35px; }
+        .contant-us_board .contant-us__form div i {
+          color: #aaaaaa;
+          font-size: 10px;
+          position: absolute;
+          bottom: 0;
+          top: 0;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          left: 5px; }
+      .contant-us_board .contant-us__form input {
+        position: relative;
+        color: #aaaaaa;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        padding: 0 17px;
+        border: 1px solid #ffc107; }
+      .contant-us_board .contant-us__form .input_name {
+        width: 30%; }
+      .contant-us_board .contant-us__form .input_phone {
+        width: 30%; }
+      .contant-us_board .contant-us__form .input_email {
+        width: 30%; }
+      .contant-us_board .contant-us__form .text_mess {
+        height: auto;
+        width: 100%;
+        margin-top: 7px; }
+        .contant-us_board .contant-us__form .text_mess i {
+          top: 13px;
+          -webkit-box-align: start;
+          -webkit-align-items: flex-start;
+              -ms-flex-align: start;
+                  align-items: flex-start; }
+        .contant-us_board .contant-us__form .text_mess textarea {
+          display: block;
+          margin: 0;
+          width: 100%;
+          height: 187px;
+          color: #aaaaaa;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          padding: 10px 17px;
+          border: 1px solid #ffc107;
+          resize: none; }
+      .contant-us_board .contant-us__form .input_submit {
+        margin-left: auto;
+        cursor: pointer;
+        margin-top: 13px;
+        background-color: #ffc107;
+        text-transform: uppercase;
+        color: #000;
+        font-size: 16px;
+        width: 50%;
+        height: 45px; }
+  .contant-us_board .contant_img-abs {
+    top: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute; }
+    .contant-us_board .contant_img-abs .contant_img {
+      width: 100%;
+      position: relative; }
+      .contant-us_board .contant_img-abs .contant_img img {
+        width: 100%; }
+      .contant-us_board .contant_img-abs .contant_img span {
+        font-size: 19px;
+        font-weight: 400;
+        text-transform: uppercase;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        right: 8%;
+        position: absolute;
+        top: 8%;
+        height: 32%;
+        width: 38%;
+        -webkit-border-radius: 46%;
+                border-radius: 46%;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+        text-align: center; }
+
 @media screen and (max-width: 1750px) {
   .header__nav {
     margin-right: 0; }
@@ -613,7 +864,26 @@ body * {
   .our_hotel .map {
     font-family: 'Proxima Nova', Georgia, sans-serif;
     width: 100%;
-    height: 400px; } }
+    height: 400px; }
+  .contant-us_board {
+    position: relative; }
+    .contant-us_board .contant_img-abs {
+      width: 12%; }
+      .contant-us_board .contant_img-abs .contant_img span {
+        font-size: 11px; } }
+
+@media screen and (max-width: 1300px) {
+  .contant-us_board {
+    position: relative; }
+    .contant-us_board .contant_img-abs {
+      width: 12%;
+      left: 0;
+      margin: auto;
+      bottom: 0;
+      top: auto;
+      right: 0; }
+      .contant-us_board .contant_img-abs .contant_img span {
+        font-size: 10px; } }
 
 @media screen and (max-width: 1200px) {
   .header {
@@ -641,7 +911,9 @@ body * {
   .our_hotel .second_board__content img:first-child {
     width: 250px; }
   .our_hotel .second_board__content img:last-child {
-    width: 200px; } }
+    width: 200px; }
+  .contant-us_board .contant_img-abs .contant_img span {
+    font-size: 9px; } }
 
 @media screen and (max-width: 950px) {
   .header {
@@ -817,12 +1089,8 @@ body * {
             background-color: #fff;
             border: 3px solid #fff;
             color: #000; }
-          .site_wrap .main_board__buttons .contacts_btn:hover span{
-            color: #000;
-          }
             .site_wrap .main_board__buttons .contacts_btn:hover i {
               color: #000; }
-          
     .site_wrap .footer {
       background-color: rgba(0, 66, 117, 0.61);
       font-family: 'Proxima Nova', Georgia, sans-serif;
@@ -919,7 +1187,66 @@ body * {
       -webkit-box-ordinal-group: 2;
       -webkit-order: 1;
           -ms-flex-order: 1;
-              order: 1; } }
+              order: 1; }
+  .contant-us_board {
+    position: relative; }
+    .contant-us_board .contant-us {
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      padding: 45px 20px 40px 20px; }
+      .contant-us_board .contant-us > span {
+        width: 100%;
+        text-align: left; }
+      .contant-us_board .contant-us__info {
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        text-align: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 100%; }
+        .contant-us_board .contant-us__info > span {
+          width: 100%;
+          text-align: left; }
+        .contant-us_board .contant-us__info .contant-us__email i {
+          margin-left: auto; }
+        .contant-us_board .contant-us__info .contant-us__email h5 {
+          margin-right: auto; }
+        .contant-us_board .contant-us__info .contant-us__phone i {
+          margin-left: auto; }
+        .contant-us_board .contant-us__info .contant-us__phone h5 {
+          margin-right: auto; }
+        .contant-us_board .contant-us__info .contant-us__locat i {
+          margin-left: auto; }
+        .contant-us_board .contant-us__info .contant-us__locat span {
+          margin-right: auto; }
+      .contant-us_board .contant-us__form {
+        margin-top: 20px;
+        width: 100%; }
+        .contant-us_board .contant-us__form .input_name {
+          width: 32%; }
+        .contant-us_board .contant-us__form .input_phone {
+          width: 32%; }
+        .contant-us_board .contant-us__form .input_email {
+          width: 32%; }
+    .contant-us_board .contant_img-abs {
+      width: 120px;
+      margin: auto;
+      bottom: 0;
+      top: auto;
+      left: 20px;
+      margin-right: 65%;
+      right: 0;
+      left: 0; }
+      .contant-us_board .contant_img-abs .contant_img {
+        width: 100%;
+        position: relative; }
+        .contant-us_board .contant_img-abs .contant_img span {
+          font-size: 9px; } }
 
 @media screen and (max-width: 600px) {
   .header {
@@ -1029,4 +1356,37 @@ body * {
       margin: auto;
       margin-top: 10px; }
   .our_hotel_wrap {
-    height: 450px; } }
+    height: 450px; }
+  .contant-us_board .contant-us {
+    padding-bottom: 100px; }
+    .contant-us_board .contant-us__info .contant-us__email {
+      width: 100%; }
+      .contant-us_board .contant-us__info .contant-us__email i {
+        margin-left: auto; }
+      .contant-us_board .contant-us__info .contant-us__email h5 {
+        margin-right: auto; }
+    .contant-us_board .contant-us__info .contant-us__phone {
+      margin-top: 20px;
+      width: 100%; }
+      .contant-us_board .contant-us__info .contant-us__phone i {
+        margin-left: auto; }
+      .contant-us_board .contant-us__info .contant-us__phone h5 {
+        margin-right: auto; }
+    .contant-us_board .contant-us__info .contant-us__locat {
+      margin-top: 20px; }
+      .contant-us_board .contant-us__info .contant-us__locat i {
+        margin-left: auto; }
+      .contant-us_board .contant-us__info .contant-us__locat span {
+        margin-right: auto; }
+    .contant-us_board .contant-us__form .input_name {
+      width: 100%; }
+    .contant-us_board .contant-us__form .input_phone {
+      margin-top: 10px;
+      width: 100%; }
+    .contant-us_board .contant-us__form .input_email {
+      margin-top: 10px;
+      width: 100%; }
+    .contant-us_board .contant-us__form .input_submit {
+      width: 100%; }
+  .contant-us_board .contant_img-abs {
+    margin: auto; } }
