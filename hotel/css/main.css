@@ -625,7 +625,7 @@ footer.footer_default {
       .contant-us_board .contant-us__info > span {
         font-size: 14px;
         text-transform: uppercase;
-        font-weight: 400;
+        width: 100%;
         display: inline-block;
         margin-bottom: 25px; }
       .contant-us_board .contant-us__info .contant-us__email {
@@ -648,8 +648,7 @@ footer.footer_default {
         .contant-us_board .contant-us__info .contant-us__email h5 {
           margin: 0;
           font-size: 14px;
-          text-transform: uppercase;
-          font-weight: 400; }
+          text-transform: uppercase; }
         .contant-us_board .contant-us__info .contant-us__email a {
           color: #ffc107;
           width: 100%;
@@ -658,7 +657,6 @@ footer.footer_default {
           text-decoration: none;
           display: block;
           font-size: 14px;
-          font-weight: 300;
           -webkit-transition: .5s;
           transition: .5s; }
           .contant-us_board .contant-us__info .contant-us__email a:hover {
@@ -683,8 +681,7 @@ footer.footer_default {
         .contant-us_board .contant-us__info .contant-us__phone h5 {
           margin: 0;
           font-size: 14px;
-          text-transform: uppercase;
-          font-weight: 400; }
+          text-transform: uppercase; }
         .contant-us_board .contant-us__info .contant-us__phone a {
           width: 100%;
           margin-top: 10px;
@@ -692,7 +689,6 @@ footer.footer_default {
           text-decoration: none;
           display: block;
           font-size: 14px;
-          font-weight: 300;
           -webkit-transition: .5s;
           transition: .5s; }
           .contant-us_board .contant-us__info .contant-us__phone a:hover {
@@ -713,7 +709,6 @@ footer.footer_default {
           color: #000;
           text-decoration: none;
           font-size: 14px;
-          font-weight: 300;
           color: #000; }
         .contant-us_board .contant-us__info .contant-us__locat:hover span {
           color: #ffc107; }
@@ -766,6 +761,18 @@ footer.footer_default {
         outline: none;
         padding: 0 17px;
         border: 1px solid #ffc107; }
+        .contant-us_board .contant-us__form input::-webkit-input-placeholder {
+          /* Chrome/Opera/Safari */
+          color: #aaaaaa; }
+        .contant-us_board .contant-us__form input::-moz-placeholder {
+          /* Firefox 19+ */
+          color: #aaaaaa; }
+        .contant-us_board .contant-us__form input:-ms-input-placeholder {
+          /* IE 10+ */
+          color: #aaaaaa; }
+        .contant-us_board .contant-us__form input:-moz-placeholder {
+          /* Firefox 18- */
+          color: #aaaaaa; }
       .contant-us_board .contant-us__form .input_name {
         width: 30%; }
       .contant-us_board .contant-us__form .input_phone {
@@ -796,6 +803,18 @@ footer.footer_default {
           padding: 10px 17px;
           border: 1px solid #ffc107;
           resize: none; }
+          .contant-us_board .contant-us__form .text_mess textarea::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: #aaaaaa; }
+          .contant-us_board .contant-us__form .text_mess textarea::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #aaaaaa; }
+          .contant-us_board .contant-us__form .text_mess textarea:-ms-input-placeholder {
+            /* IE 10+ */
+            color: #aaaaaa; }
+          .contant-us_board .contant-us__form .text_mess textarea:-moz-placeholder {
+            /* Firefox 18- */
+            color: #aaaaaa; }
       .contant-us_board .contant-us__form .input_submit {
         margin-left: auto;
         cursor: pointer;
@@ -829,7 +848,6 @@ footer.footer_default {
         width: 100%; }
       .contant-us_board .contant_img-abs .contant_img span {
         font-size: 19px;
-        font-weight: 400;
         text-transform: uppercase;
         display: -webkit-box;
         display: -webkit-flex;
