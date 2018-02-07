@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<title>Hotel | About us</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+	<link rel="stylesheet" href="js/magnific-popup.css">
+</head>
+<body class="about_us">
+	<article class="section_wrap">
+		<header class="header">
+			<a href="/hotel/" class="header__logo">
+				<img src="img/logo.png" alt="Hostal Orci">
+			</a>
+			<span id="menu_btn"><i></i></span>
+			<div class="menu_wrap">
+				<nav class="header__nav">
+					<a href="/hotel/" class="nav-item"><i class="fas fa-home"></i><span>WILLKOMMEN</span></a>
+					<a href="/hotel/about_us.html" class="nav-item active"><span>ÜBER UNS</span></a>
+					<a href="/hotel/our_hotel.html" class="nav-item"><span>UNSERE HIGHLIGHTS</span></a>
+					<a href="#" class="nav-item"><span>BILDERGALERIE</span></a>
+					<a href="/hotel/contact_us.html" class="nav-item"><span>UNSERE KONTAKTDETAILS</span></a>
+					<a href="#" class="nav-item"><span>BEWERTUNGEN</span></a>
+				</nav>
+				<div class="header__lang">
+					<a href="#" class="lang_active"><img src="img/icon_deu.png" alt="Deutsch"><span>Select Language</span><i class="fas fa-angle-down"></i></a>
+					<div class="all_lang">
+						<a href="#"><img src="img/icon_deu.png" alt="Deutsch">Deutsch</a>
+						<a href="#"><img src="img/icon_deu.png" alt="Deutsch">Deutsch</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="main_board">
+			<h1>UBER UNS</h1>
+			<h2>GET MORE INFO ABOUT OUR AGENCY</h2>
+		</section>
+	</article>
+	<section class="gallery_board">
+		<div id="gallery-1" class="gallery_item">
+			<div class="gallery-img-wrap">
+				<img src="img/gallery_1.png" alt="LOBBY BAR">
+			</div>
+			<h3>LOBBY BAR</h3>
+			<span>3 PHOTOS</span>
+		</div>
+		<div id="gallery-2" class="gallery_item">
+			<div class="gallery-img-wrap">
+				<img src="img/gallery_2.png" alt="SCHWIMMINGPOOL">
+			</div>
+			<h3>SCHWIMMINGPOOL</h3>
+			<span>5 PHOTOS</span>
+		</div>
+		<div id="gallery-3" class="gallery_item">
+			<div class="gallery-img-wrap">
+				<img src="img/gallery_3.png" alt="5 PHOTOS">
+			</div>
+			<h3>ZIMMER</h3>
+			<span>6 PHOTOS</span>
+		</div>
+		<div id="gallery-4" class="gallery_item">
+			<div class="gallery-img-wrap">
+				<img src="img/gallery_4.png" alt="FRUEHSTUECK">
+			</div>
+			<h3>FRUEHSTUECK</h3>
+			<span>5 PHOTOS</span>
+		</div>
+		<div id="gallery-5" class="gallery_item">
+			<div class="gallery-img-wrap">
+				<img src="img/gallery_5.png" alt="GUESTS PICTURES">
+			</div>
+			<h3>GUESTS PICTURES</h3>
+			<span>4 PHOTOS</span>
+		</div>
+		<div id="gallery-6" class="gallery_item">
+			<div class="gallery-img-wrap">
+				<img src="img/gallery_6.png" alt="HOLL">
+			</div>
+			<h3>HOLL</h3>
+			<span>1 PHOTOS</span>
+		</div>
+	</section>
+	<footer class="footer_default">
+		<span class="copy">Copyright &copy; 2018</span>
+		<a href="http://young-developers.zzz.com.ua/" target="_blank" class="YD">Realised Young-Developers </a>
+	</footer>
+	<script src="js/libs.min.js"></script>
+	<script src="js/jquery.magnific-popup.js"></script>
+	<script src="js/common.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#gallery-1').magnificPopup({
+			    items: [
+			      {
+			        src: 'img/gallery/bar-1.jpg'
+			      },
+  			      {
+			        src: 'img/gallery/bar-2.jpg'
+			      },
+			      {
+			        src: 'img/gallery/bar-3.jpg',
+			      }
+			    ],
+			    gallery: {
+			      enabled: true
+			    },
+			    type: 'image' // this is a default type
+			});
+			$('#gallery-2').magnificPopup({
+			    items: [
+			      {
+			        src: 'img/gallery/pool-1.jpg'
+			      },
+  			      {
+			        src: 'img/gallery/pool-2.jpg'
+			      },
+			      {
+			        src: 'img/gallery/pool-3.jpg',
+			      },
+			      {
+			        src: 'img/gallery/pool-4.jpg',
+			      },
+			      {
+			        src: 'img/gallery/pool-5.jpg',
+			      }
+
+			    ],
+			    gallery: {
+			      enabled: true
+			    },
+			    type: 'image' // this is a default type
+			});
+			$('#gallery-3').magnificPopup({
+			    items: [
+			      {
+			        src: 'img/gallery/nomer-1.jpg'
+			      },
+  			      {
+			        src: 'img/gallery/nomer-2.jpg'
+			      },
+			      {
+			        src: 'img/gallery/nomer-3.jpg',
+			      },
+			      {
+			        src: 'img/gallery/nomer-4.jpg',
+			      },
+			      {
+			        src: 'img/gallery/nomer-5.jpg',
+			      },
+			      {
+			        src: 'img/gallery/nomer-6.jpg',
+			      }
+
+			    ],
+			    gallery: {
+			      enabled: true
+			    },
+			    type: 'image' // this is a default type
+			});
+			$('#gallery-4').magnificPopup({
+			    items: [
+			      {
+			        src: 'img/gallery/lunch-1.jpg'
+			      },
+  			      {
+			        src: 'img/gallery/lunch-2.jpg'
+			      },
+			      {
+			        src: 'img/gallery/lunch-3.jpg',
+			      },
+			      {
+			        src: 'img/gallery/lunch-4.jpg',
+			      },
+			      {
+			        src: 'img/gallery/lunch-5.jpg',
+			      }
+
+			    ],
+			    gallery: {
+			      enabled: true
+			    },
+			    type: 'image' // this is a default type
+			});
+			$('#gallery-5').magnificPopup({
+			    items: [
+			      {
+			        src: 'img/gallery/guest-1.jpg'
+			      },
+  			      {
+			        src: 'img/gallery/guest-2.jpg'
+			      },
+			      {
+			        src: 'img/gallery/guest-3.jpg',
+			      },
+			      {
+			        src: 'img/gallery/guest-4.jpg',
+			      }
+
+			    ],
+			    gallery: {
+			      enabled: true
+			    },
+			    type: 'image' // this is a default type
+			});
+			$('#gallery-6').magnificPopup({
+			    items: [
+			      {
+			        src: 'img/gallery/holl-1.jpg'
+			      }
+
+			    ],
+			    gallery: {
+			      enabled: true
+			    },
+			    type: 'image' // this is a default type
+			});
+		});
+	</script>
+</body>
+</html>
