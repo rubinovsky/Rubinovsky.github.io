@@ -4,7 +4,7 @@ $(document).ready(function(){
 	if ($(window).width() > 950) {
 		$('.site_wrap').css('min-height', windH + 'px');
 		$('.section_wrap').css('min-height', windH + 'px');
-		$("#video_wrap").append( "<audio id='bg_audio' src='audio/audio.mp3' loop></audio><video autoplay= 'true' loop='true' muted class='fillWidth fadeIn animated' id='video-background'><source src='video/Mallorca.mp4' type='video/mp4'></video>" )
+		$("#video_wrap").append( "<audio id='bg_audio' src='audio/audio-bg.mp3' loop></audio><video autoplay= 'true' loop='true' muted class='fillWidth fadeIn animated' id='video-background'><source src='video/Mallorca.mp4' type='video/mp4'></video>" )
 		var bgVideo = $('#video_wrap video');
 
 		if (windH > bgVideo.height() + 100) {
@@ -64,10 +64,14 @@ $(document).ready(function(){
 		})
 	}
     $(window).load(function () {
+    	var audioFlag = false;
 		setTimeout(function(){
 			$('#preloader').fadeOut(500);
 				if ($('audio').is('#bg_audio')) {
-					$('#bg_audio')[0].play();
+					if (audioFlag ==false) {
+						$('#bg_audio')[0].play();
+						audioFlag = true;
+					}
 		    	}
 			    window.sr = ScrollReveal({
 						reset: true,
@@ -118,7 +122,10 @@ $(document).ready(function(){
 		},400);
 		setTimeout(function(){
 			$('#preloader').fadeOut(500);
-			$('#bg_audio')[0].play();
+				if (audioFlag ==false) {
+					$('#bg_audio')[0].play();
+					audioFlag = true;
+				}
 		}, 3000)
     });
 })
