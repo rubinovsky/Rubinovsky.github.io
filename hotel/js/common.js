@@ -5,11 +5,13 @@ $(document).ready(function(){
 	if (windH > bgVideo.height() + 100) {
 		bgVideo.addClass('height_100');
 	}
-	if ($(window).width() > 900) {
+	if ($(window).width() > 950) {
 		$('.site_wrap').css('min-height', windH + 'px');
 		$('.section_wrap').css('min-height', windH + 'px');
 	}
-
+	else{
+		$(".video-background video").remove()
+	}
 	var choiceLang = $('.lang_active');
 	var listLang = $('.all_lang');
 
