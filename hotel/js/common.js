@@ -111,6 +111,6 @@ $(document).ready(function(){
 
 					sr.reveal('.reviews_item img', {distance: '300px', origin: 'left', delay: 300});
 					sr.reveal('.reviews_item .reviews_text', {distance: '300px', origin: 'right', delay: 300});
-		},600);
+		},400);
     });
 })
