@@ -64,13 +64,13 @@ $(document).ready(function(){
 		})
 	}
     $(window).load(function () {
-    	// if ($('audio').is('#bg_audio')) {
-    	// 	$('#bg_audio').onloadeddata = function(){
-    	// 	}
-    	// }
+		if ($('audio').is('#bg_audio')) {
+			$('#bg_audio').on('canplay', function(){
+				$('#preloader').fadeOut(500);				
+			});
+    	}
 		setTimeout(function(){
 			$('#preloader').fadeOut(500);
-				$('#bg_audio').play();
 			    window.sr = ScrollReveal({
 						reset: true,
 						duration: 1000,
@@ -120,6 +120,6 @@ $(document).ready(function(){
 		},400);
 		setTimeout(function(){
 			$('#preloader').fadeOut(500);
-		}, 3000)	
+		}, 3000)
     });
 })
