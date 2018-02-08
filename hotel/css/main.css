@@ -177,6 +177,33 @@ body input, body textarea {
           font-size: 16px;
           margin-right: 7px;
           color: #ffc107; }
+      .site_wrap .footer__nav a {
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        font-weight: 700;
+        font-size: 12px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-decoration: none;
+        color: #fff;
+        align-items: center; }
+        .site_wrap .footer__nav a:hover {
+          color: #ffc107 !important; }
+        .site_wrap .footer__nav a:focus, .site_wrap .footer__nav a:active, .site_wrap .footer__nav a:visited {
+          color: #fff;
+          text-decoration: none; }
+        .site_wrap .footer__nav a img {
+          margin-right: 7px; }
+        .site_wrap .footer__nav a i {
+          font-size: 16px;
+          margin-right: 7px;
+          color: #ffc107; }
   .site_wrap:after {
     z-index: 1;
     top: 0;
