@@ -68,9 +68,9 @@ $(document).ready(function(){
     	// 	$('#bg_audio').onloadeddata = function(){
     	// 	}
     	// }
-		$('#bg_audio').play();
 		setTimeout(function(){
 			$('#preloader').fadeOut(500);
+				$('#bg_audio').play();
 			    window.sr = ScrollReveal({
 						reset: true,
 						duration: 1000,
