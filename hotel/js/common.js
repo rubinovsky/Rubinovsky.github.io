@@ -8,9 +8,7 @@ $(document).ready(function(){
 	if ($(window).width() > 950) {
 		$('.site_wrap').css('min-height', windH + 'px');
 		$('.section_wrap').css('min-height', windH + 'px');
-	}
-	else{
-		$(".video-background video").remove()
+		$("#video_wrap").append( "<video autoplay= 'true' loop='true' muted class='fillWidth fadeIn animated' id='video-background'><source src='video/Mallorca.mp4' type='video/mp4'></video>" )
 	}
 	var choiceLang = $('.lang_active');
 	var listLang = $('.all_lang');
@@ -114,5 +112,8 @@ $(document).ready(function(){
 					sr.reveal('.reviews_item img', {distance: '300px', origin: 'left', delay: 300});
 					sr.reveal('.reviews_item .reviews_text', {distance: '300px', origin: 'right', delay: 300});
 		},400);
+		setTimeout(function(){
+			$('#preloader').fadeOut(500);
+		}, 3000)
     });
 })

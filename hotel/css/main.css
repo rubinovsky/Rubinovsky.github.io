@@ -1910,7 +1910,8 @@ footer.footer_default {
       .header__nav .nav-item {
         color: #000;
         margin-bottom: 7px;
-        display: block; }
+        display: block;
+        margin-right: 0; }
         .header__nav .nav-item i {
           display: none; }
         .header__nav .nav-item span {
