@@ -1,14 +1,15 @@
 $(document).ready(function(){
 	var windH = $(window).height();
-	var bgVideo = $('.video-background video');
 	
-	if (windH > bgVideo.height() + 100) {
-		bgVideo.addClass('height_100');
-	}
 	if ($(window).width() > 950) {
 		$('.site_wrap').css('min-height', windH + 'px');
 		$('.section_wrap').css('min-height', windH + 'px');
 		$("#video_wrap").append( "<video autoplay= 'true' loop='true' muted class='fillWidth fadeIn animated' id='video-background'><source src='video/Mallorca.mp4' type='video/mp4'></video>" )
+		var bgVideo = $('#video_wrap video');
+
+		if (windH > bgVideo.height() + 100) {
+			bgVideo.addClass('height_100');
+		}
 	}
 	var choiceLang = $('.lang_active');
 	var listLang = $('.all_lang');
