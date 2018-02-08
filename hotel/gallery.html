@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Hotel | BILDERGALERIE </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/main.css">
-	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
-	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link async rel="stylesheet" href="css/main.css">
+	<link async href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link async rel="shortcut icon" href="img/favicon.png" type="image/png">
+	<link async rel="stylesheet" href="css/magnific-popup.css">
 </head>
 <body class="about_us">
 	<div id="preloader">
@@ -120,7 +120,8 @@
 			    gallery: {
 			      enabled: true
 			    },
-			    type: 'image' // this is a default type
+			    type: 'image',
+			    removalDelay: 1000
 			});
 			$('#gallery-2').magnificPopup({
 			    items: [
