@@ -7,6 +7,7 @@ $(document).ready(function(){
 	}
 	if ($(window).width() > 900) {
 		$('.site_wrap').css('min-height', windH + 'px');
+		$('.section_wrap').css('min-height', windH + 'px');
 	}
 
 	var choiceLang = $('.lang_active');
@@ -28,6 +29,12 @@ $(document).ready(function(){
 			$('.header').removeClass('menu-open');
 			$('#menu_btn').removeClass('open');
 		}
+	})
+	$(document).bind('touchstart', function(e){
+		if (!$('.header .menu_wrap').is(e.target) && $('.header .menu_wrap').has(e.target).length === 0 && !$('#menu_btn').is(e.target) && $('#menu_btn').has(e.target).length === 0 && $('.header').hasClass('menu-open')) { 
+			$('.header').removeClass('menu-open');
+			$('#menu_btn').removeClass('open');
+		}	
 	})
 	$('#menu_btn').click(function(){
 		if (!$(this).hasClass('open')) {
@@ -58,6 +65,6 @@ $(document).ready(function(){
     $(window).load(function () {
 		setTimeout(function(){
 			$('#preloader').fadeOut(500);
-		},1000);
+		},600);
     });
 })
