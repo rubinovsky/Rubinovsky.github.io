@@ -4,17 +4,28 @@ $(document).ready(function(){
 
 	var a = $('section');
 	for (var i = 0; i < a.length; i++) {
-		a.eq(i).data('scrollTo', i *$(window).height())	
+		a.eq(i).data('scrollTo', i *$(window).height());
+		if ( i%2 == 0 && i != 0) {
+			a.eq(i).data('bg', 'white');
+		}
+		else{
+			a.eq(i).data('bg', 'blue');
+		}
 	}
 	window.dirItemHover = false;
 	window.changeSlide = false;
-	$('#about_us').scrollTop(0);
 	$('nav a').click(function(e){
 		e.preventDefault();
 		$('nav a').removeClass('active');
 		$(this).addClass('active');
 		var sectionId = $(this).attr('href');
 		var offsetSection = $(sectionId).data('scrollTo');
+		if ($(sectionId).data('bg') == 'blue') {
+			$('body').addClass('blue');
+		}
+		else{
+			$('body').removeClass('blue');
+		}
 		$('body').animate({'top': '-' + offsetSection + 'px' }, 500);
 	});
 	$('body').on('mousewheel', function(event) {
