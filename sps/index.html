@@ -7,10 +7,11 @@
 	<!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet"> -->
 	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet"> -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="css/mCustomScrollbar.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 </head>
-<body class="blue">
+<body class="blue first">
 	<header class="header">
 		<div class="header_wrap">
 			<a href="#" class="header__logo">
@@ -123,6 +124,47 @@
 				<h4>Документи для конференції СПС</h4>
 				<a href="#">Переглянути</a>
 			</div>
+			<div class="docs__item ">
+				<i class="far fa-file"></i>
+				<h4>Статут СПС КПІ</h4>
+				<a href="#">Переглянути</a>
+			</div>
+			<div class="docs__item ">
+				<i class="far fa-file"></i>
+				<h4>Присвоєння ознаки неприбутковості</h4>
+				<a href="#">Переглянути</a>
+			</div>
+			<div class="docs__item ">
+				<i class="far fa-file"></i>
+				<h4>Заява на вступ в СПС</h4>
+				<a href="#">Переглянути</a>
+			</div>
+			<div class="docs__item ">
+				<i class="far fa-file"></i>
+				<h4>Документи для конференції СПС</h4>
+				<a href="#">Переглянути</a>
+			</div>
+			<div class="docs__item ">
+				<i class="far fa-file"></i>
+				<h4>Статут СПС КПІ</h4>
+				<a href="#">Переглянути</a>
+			</div>
+			<div class="docs__item ">
+				<i class="far fa-file"></i>
+				<h4>Присвоєння ознаки неприбутковості</h4>
+				<a href="#">Переглянути</a>
+			</div>
+			<div class="docs__item ">
+				<i class="far fa-file"></i>
+				<h4>Заява на вступ в СПС</h4>
+				<a href="#">Переглянути</a>
+			</div>
+			<div class="docs__item ">
+				<i class="far fa-file"></i>
+				<h4>Документи для конференції СПС</h4>
+				<a href="#">Переглянути</a>
+			</div>
+
 		</div>
 	</section>
 	<!-- docs END -->
@@ -159,8 +201,22 @@
 	</div>
 	<script src="js/animate-bg/animate.js"></script>
  -->
+	<span id="next_slide"></span>
 	<script src="js/libs.min.js"></script>
 	<script src="js/mousewheel.js"></script>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="js/common.js"></script>
+	<script>
+	(function($){
+		$(window).on("load",function(){
+			
+			$.mCustomScrollbar.defaults.scrollButtons.enable=true; //enable scrolling buttons by default
+			$.mCustomScrollbar.defaults.axis="y"; //enable 2 axis scrollbars by default
+			
+			$("#docs").mCustomScrollbar({theme:"minimal-dark"});
+			
+		});
+	})(jQuery);
+</script>
 </body>
 </html>

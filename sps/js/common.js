@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$('section').css('height', $(window).height() + 'px'); 
+	$('section').css('height', $(window).height() - 70 + 'px'); 
 
 	var a = $('section');
 	for (var i = 0; i < a.length; i++) {
@@ -10,6 +10,12 @@ $(document).ready(function(){
 		}
 		else{
 			a.eq(i).data('bg', 'blue');
+		}
+		if (i == 0) {
+			a.eq(i).data('order', 'first');
+		}
+		else if(i == a.length - 1){
+			a.eq(i).data('order', 'last');
 		}
 	}
 	window.dirItemHover = false;
@@ -26,8 +32,32 @@ $(document).ready(function(){
 		else{
 			$('body').removeClass('blue');
 		}
+		switch ($(sectionId).data('order')) {
+			case 'first':
+				$('body').addClass('first');
+				$('body').removeClass('last');
+				break;
+			case 'last':
+				$('body').addClass('last');
+				$('body').removeClass('first');
+				break;
+			default:
+				$('body').removeClass('last first');
+		}
 		$('body').animate({'top': '-' + offsetSection + 'px' }, 500);
 	});
+	$('#next_slide').click(function(){
+        for (var i = 0; i < $('nav a').length; i++) {
+	        if ($('nav a').eq(i).hasClass('active') && i + 1 != $('nav a').length) {
+	            $('nav a').eq(i+1).click();
+				window.changeSlide = true;
+	            setTimeout(function(){
+	            	window.changeSlide = false;
+	            }, 1000)
+	            break;
+	        }
+        }		
+	})
 	$('body').on('mousewheel', function(event) {
 		if (window.changeSlide == false) {
 			if (event.deltaY > 0) {
