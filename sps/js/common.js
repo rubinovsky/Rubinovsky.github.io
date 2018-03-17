@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$('section').css('height', $(window).height() - 70 + 'px'); 
+	$('.slide').css('height', $(window).height() - 70 + 'px'); 
 
 	var a = $('section');
 	for (var i = 0; i < a.length; i++) {
@@ -13,6 +13,7 @@ $(document).ready(function(){
 		}
 		if (i == 0) {
 			a.eq(i).data('order', 'first');
+			a.eq(i).addClass('slide-open');
 		}
 		else if(i == a.length - 1){
 			a.eq(i).data('order', 'last');
@@ -26,6 +27,8 @@ $(document).ready(function(){
 		$(this).addClass('active');
 		var sectionId = $(this).attr('href');
 		var offsetSection = $(sectionId).data('scrollTo');
+		$('.slide').removeClass('slide-open');
+		$(sectionId).addClass('slide-open');
 		if ($(sectionId).data('bg') == 'blue') {
 			$('body').addClass('blue');
 		}
