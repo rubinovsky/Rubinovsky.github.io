@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({
+	    google_ad_client: "ca-pub-2008334020980441",
+	    enable_page_level_ads: true
+	  });
+	</script>
+</head>
+<body>
+	<main style="max-width: 1110px; margin: auto; display: flex;" >
+		<section style="width: 80%; padding: 20px; box-sizing: border-box;">
+			<div style="width: 100%; height: 100px; background-color: #000; margin-top: 30px;">
+				<?php echo $var ?>
+			</div>
+			<div style="width: 100%; height: 100px; background-color: #000; margin-top: 30px; "></div>
+			<div style="width: 100%; height: 100px; background-color: #000; margin-top: 30px; "></div>
+			<div style="width: 100%; height: 100px; background-color: #000; margin-top: 30px; "></div>
+			<div style="width: 100%; height: 100px; background-color: #000; margin-top: 30px; "></div>
+		</section>
+		<aside style="width: 20%; padding: 20px; box-sizing: border-box;">
+			<div style="width: 100%; height: 100px; background-color: #000; margin-top: 30px; "></div>
+			<div style="width: 100%; height: 100px; background-color: #000; margin-top: 30px; "></div>
+			<div style="width: 100%; height: 100px; background-color: #000; margin-top: 30px; "></div>
+			<div style="width: 100%; height: 100px; background-color: #000; margin-top: 30px; "></div>
+		</aside>
+	</main>
+</body>
+</html>
