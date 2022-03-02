@@ -1,0 +1,11 @@
+{
+  "title": "Help Ukraine in the war with Russia",
+  "description": "Glory to Ukraine!",
+  "setDonateAmount": "Enter your donation amount",
+  "enterYourAmount": "Other",
+  "done": "Done",
+  "donateTitle": "Choose your donation",
+  "minLimitError": "Your donation can't be smaller than 5$",
+  "maxLimitError": "Your donation can't be greater than 10 000$",
+  "donate": "Donate"
+}
