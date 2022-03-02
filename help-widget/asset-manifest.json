@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c3e868d.css",
-    "main.js": "/static/js/main.01ec0023.js",
-    "static/js/787.6652e991.chunk.js": "/static/js/787.6652e991.chunk.js",
-    "static/media/help-3.png": "/static/media/help-3.6afd0cdcf2135dd51108.png",
-    "static/media/help-1.png": "/static/media/help-1.16a4a7c0e0a11097ccc4.png",
-    "static/media/help-2.png": "/static/media/help-2.d88d1412e365e6463fde.png",
-    "static/media/4.png": "/static/media/4.9cd4f9463773a2d92927.png",
-    "static/media/2.png": "/static/media/2.ddc2285da321b9fa4dde.png",
-    "static/media/3.png": "/static/media/3.f2f1c487965631bf5c57.png",
-    "static/media/1.png": "/static/media/1.29f9955e48ded6082d82.png",
-    "static/media/edit.png": "/static/media/edit.e10d32025cc8baf68da8.png",
-    "static/media/5.png": "/static/media/5.1d2a4457a6e5c9c3baa5.png",
-    "static/media/yellow-heart.png": "/static/media/yellow-heart.7ea432a129f4ba3f7c3d.png",
-    "static/media/blue-heart.png": "/static/media/blue-heart.62112c61726afe798f92.png",
-    "index.html": "/index.html",
-    "static/media/getFetch.cjs": "/static/media/getFetch.c780682470504fffbd04.cjs",
-    "main.8c3e868d.css.map": "/static/css/main.8c3e868d.css.map",
-    "main.01ec0023.js.map": "/static/js/main.01ec0023.js.map",
-    "787.6652e991.chunk.js.map": "/static/js/787.6652e991.chunk.js.map"
+    "main.css": "/help-widget/static/css/main.8c3e868d.css",
+    "main.js": "/help-widget/static/js/main.98ce0cd8.js",
+    "static/js/787.6652e991.chunk.js": "/help-widget/static/js/787.6652e991.chunk.js",
+    "static/media/help-3.png": "/help-widget/static/media/help-3.6afd0cdcf2135dd51108.png",
+    "static/media/help-1.png": "/help-widget/static/media/help-1.16a4a7c0e0a11097ccc4.png",
+    "static/media/help-2.png": "/help-widget/static/media/help-2.d88d1412e365e6463fde.png",
+    "static/media/4.png": "/help-widget/static/media/4.9cd4f9463773a2d92927.png",
+    "static/media/2.png": "/help-widget/static/media/2.ddc2285da321b9fa4dde.png",
+    "static/media/3.png": "/help-widget/static/media/3.f2f1c487965631bf5c57.png",
+    "static/media/1.png": "/help-widget/static/media/1.29f9955e48ded6082d82.png",
+    "static/media/edit.png": "/help-widget/static/media/edit.e10d32025cc8baf68da8.png",
+    "static/media/5.png": "/help-widget/static/media/5.1d2a4457a6e5c9c3baa5.png",
+    "static/media/yellow-heart.png": "/help-widget/static/media/yellow-heart.7ea432a129f4ba3f7c3d.png",
+    "static/media/blue-heart.png": "/help-widget/static/media/blue-heart.62112c61726afe798f92.png",
+    "index.html": "/help-widget/index.html",
+    "static/media/getFetch.cjs": "/help-widget/static/media/getFetch.c780682470504fffbd04.cjs",
+    "main.8c3e868d.css.map": "/help-widget/static/css/main.8c3e868d.css.map",
+    "main.98ce0cd8.js.map": "/help-widget/static/js/main.98ce0cd8.js.map",
+    "787.6652e991.chunk.js.map": "/help-widget/static/js/787.6652e991.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8c3e868d.css",
-    "static/js/main.01ec0023.js"
+    "static/js/main.98ce0cd8.js"
   ]
 }
